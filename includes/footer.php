@@ -38,6 +38,7 @@
 						<li><a href="company/contactus.html">Contact Us</a></li>
 						<li><a href="company/management.html">Management</a></li>
 						<li><a href="http://blog.rayv.com">Blog</a></li>
+						<li><a href="company/careers.html">Careers</a></li>
 					</ul>
 				</td>
 				<td>
@@ -53,8 +54,8 @@
 			<a href="index.html"><img src="images/footer_logo.jpg" alt="RayV.com Home" /></a>
 			<p>
 				copyright &copy;2011 RayV Inc.<br>
-				<a href="legal/toc.html">Terms and Conditions</a><br>
-				<a href="legal/privacy.html">Privacy Policy</a>
+				<!--<a href="legal/toc.html">Terms and Conditions</a><br>
+				<a href="legal/privacy.html">Privacy Policy</a>-->
 			</p>
 		</div>
 	</div>

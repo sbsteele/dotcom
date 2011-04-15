@@ -817,7 +817,14 @@ h3.bluebg {
 	margin: 0px;
 }
 #lcol ul.mgmtlist li {
-	margin: 2em 0;
+	margin: 0 0 3em 0;
+}
+#lcol ul.mgmtlist img {
+	width: 76px;
+	height: 76px;
+	float: left;
+	padding: .4em 10px 0 0;
+	clear: left;
 }
 #lcol .mgmtlist h3 {
 	font-size: 116%;
@@ -825,8 +832,8 @@ h3.bluebg {
 	color: #303030;
 	margin: 0px;
 }
-#lcol .mgmtlist p {
-	margin-top: 0;
+#lcol .mgmtlist li.clearfix p {
+	margin: 0 0 0 86px;
 }
 .googlemap {
 	float: left;
