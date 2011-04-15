@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Horizontal Accordion</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<style>
+.accordion-container {
+	float: left;
+	width: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+ul.accordion {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul.accordion li {
+	float: left;
+	height: 250px;
+	background: #0D0D0C;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+/* Optional selected panel style */
+ul.accordion li.selectedPanel {
+	
+}
+
+/* Makes content extend to panel max width */
+ul.accordion li .panelContent {
+	display:block;
+}
+
+/* Use this to style panel's inner content */
+ul.accordion li .panelContent .innerContent {
+	font-size: 12px;
+	color: #F2F2F2;
+	margin: 5px;
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+<!-- A div with the class "accordion-container" wrapped around a ul with a class of "accordion" is all that this accordion requires. -->
+<div class="accordion-container">
+	<ul class="accordion">
+		<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula ullamcorper orci sit amet varius. Nulla mauris urna, adipiscing in tempor sit amet, condimentum et dolor. Mauris et risus a nunc tincidunt malesuada. Nulla vel orci leo. Sed mattis pretium vulputate. In hac habitasse platea dictumst. Donec semper ligula eget ipsum hendrerit viverra. Nulla facilisi. Fusce feugiat imperdiet nunc, in rutrum nulla facilisis sollicitudin. Vivamus et nisl orci. Nullam interdum urna non enim congue iaculis sagittis augue sodales.</p></li>
+		<li><p>Nam ut urna lacus. Donec sit amet dolor libero, in tincidunt tellus. Nam tempus interdum risus, in aliquam libero cursus at. Sed nulla eros, vehicula sed dignissim sit amet, aliquet eget neque. Proin non quam a ligula placerat molestie non iaculis nunc. Pellentesque malesuada odio id metus auctor interdum. Duis ornare ligula eu massa malesuada suscipit. Nunc ante lacus, ultrices nec dignissim nec, ultricies auctor quam. Vivamus ac justo a mauris dictum ultricies. Morbi aliquet malesuada erat, ut viverra nisi euismod et. Curabitur felis magna, laoreet id tincidunt hendrerit, tincidunt eu tortor. Ut pharetra eleifend dui quis molestie.</p> 
+		<p>Quisque porttitor feugiat dui nec consectetur. Morbi consequat, augue sed aliquet vehicula, nisl mauris sagittis leo, et euismod mauris arcu vel magna. Donec consequat ligula nisl, nec vehicula felis. Nullam tempus adipiscing aliquam. Nam magna turpis, ultrices interdum mattis consectetur, tincidunt eu dolor.</p></li>
+		<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula ullamcorper orci sit amet varius. Nulla mauris urna, adipiscing in tempor sit amet, condimentum et dolor. Mauris et risus a nunc tincidunt malesuada. Nulla vel orci leo. Sed mattis pretium vulputate. In hac habitasse platea dictumst. Donec semper ligula eget ipsum hendrerit viverra. Nulla facilisi. Fusce feugiat imperdiet nunc, in rutrum nulla facilisis sollicitudin. Vivamus et nisl orci. Nullam interdum urna non enim congue iaculis sagittis augue sodales.</p></li>
+	</ul>
+</div>
+</body>
+<script type="text/javascript" >
+$(document).ready(function() { 
+	var accList = $("ul.accordion li");
+	$(accList).filter(":first").addClass('selectedPanel');
+	var maxW = $('.accordion-container').width() * 0.8;
+	var minW = ($('.accordion-container').width() - maxW) / ($(accList).length - 1);
+	var minH = 0;
+	
+	$.each(accList, function(i, panel) {
+		$(panel).html("<div class='panelContent'><div class='innerContent'>"+ $(panel).html() +"</div></div>");
+		if(i != 0) {
+			$(panel).css("width", minW+"px");
+		} else {
+			$(panel).css("width", maxW+"px");	
+		}
+	});
+	$("ul.accordion li div.panelContent").css({"width" : maxW+"px"});
+	
+	accList.click(function() {
+		if($(this).attr("class") != "selectedPanel") {
+			accList.removeClass('selectedPanel');	
+			$(this).addClass('selectedPanel');
+			// stop([clearQueue], [jumpToEnd]);
+			$(":animated").stop(true, true);
+			$(accList).filter(":not('.selectedPanel')").animate({
+				width: minW+"px",
+				opacity: .5
+			}, "slow");
+			$(this).animate({
+				width: maxW+"px",
+				opacity: 1
+			}, "slow");
+		}
+	});
+});
+</script>
+</html>

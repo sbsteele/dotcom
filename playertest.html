@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Player</title>
+ 
+                <style type="text/css">
+                                .player {
+                                                float: left;
+                                                width: 640px;
+                                                height: 390px;
+                                }
+ 
+                                .player #player-container {
+                                                float: left;
+                                                clear: both;
+                                                width: 640px;
+                                                height: 360px;
+                                }
+ 
+                                .player .flash-player-not-installed
+                                {
+                                                padding: 0;
+                                                background-color: #e9e9e9;
+                                                text-align: center;
+                                }
+ 
+                                .player .flash-player-not-installed div
+                                {
+                                                padding-top: 70px;
+                                }
+ 
+                                .player  #quality-panel {
+                                                border-top: solid 3px #35a;
+                                                float: left;
+                                                width: 640px;
+                                }
+ 
+                                .rayv-quality-panel {
+                                                float: right;
+                                }
+ 
+                                .rayv-quality-panel span {
+                                                float: left;
+                                                text-align: center;
+                                                width: 65px;
+                                                height: 21px;
+                                                padding-top: 4px;
+                                                margin-left: 2px;
+                                                cursor: pointer;
+                                                font-family: Arial;
+                                                font-size: 12px;
+                                }
+ 
+                                .rayv-quality-panel span:hover {
+                                                background-color: #ddd;
+                                }
+ 
+                                .rayv-quality-panel span.selected,
+                                .rayv-quality-panel span.selected:hover {
+                                                background-color: #35a;
+                                                color: #fff;
+                                }
+ 
+                                .rayv-quality-panel span.rayv-quality-separator {
+                                                display: none;
+                                }
+                </style>
+</head>
+<body>
+ 
+<div class="player">
+                <div id="player-container"></div>
+                <div id="quality-panel"></div>
+</div>
+ 
+<script type="text/javascript">
+var scriptLocationProtocol = ('https:' == document.location.protocol) ? 'https:' : 'http:';
+document.write(unescape("%3Cscript src='" + scriptLocationProtocol + "//static.rayv-inc.com/ViewerEmbed/rayvssm-2.0.js' type='text/javascript'%3E%3C/script%3E"));          
+document.write(unescape("%3Cdiv id='rayvssmscript'%3E%3C/div%3E"));
+</script>
+<script type="text/javascript">
+rayvssm.initializePlayer({
+                'hostElement': 'player-container',
+                'affiliate': 'vav-Harvestrockchurch',
+                'stream': 'Harvestrockchurch',
+                'streamMode': rayvssm.streamMode.Hybrid,
+                'qualityPanelElement': 'quality-panel'
+});
+</script>
+</body>
+</html>

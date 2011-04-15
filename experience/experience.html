@@ -1,0 +1,73 @@
+<? 
+	$pagetitle = "Experience";
+	$section = 'experience';
+?>
+<?php include '../includes/header.php'; ?>
+
+<?php include '../includes/rcol.php'; ?>
+<div id="lcol">
+	<div id="lcolinner">
+		<h1>Experience the RayV Player</h1>
+			<p>Sample channels:</p>
+			<div id="expchannels" class="clearfix">
+
+				<a href="#"  onclick="return ChangeChannel('ytnhd1200');">
+					<img src="../images/channellogos/YTN.png" alt="" />
+					<p class="channelname">YTN</p>
+					<p class="bitrate">1.2 Mbps</p>
+					<p>The number one 24-hour South Korean news channel</p>
+				</a>
+
+				<a href="#"  onclick="return ChangeChannel('france24en');">
+					<img style="position: relative; left: -10px" src="../images/channellogos/France24.jpg" alt="" />
+					<p class="channelname">France24</p>
+					<p class="bitrate">800 kbps</p>
+					<p>English-language channel offering a French perspective on world events.</p>
+				</a>
+
+				<a href="#"  onclick="return ChangeChannel('RussiaToday');">
+					<img src="../images/channellogos/RussiaToday.png" alt="" />
+					<p class="channelname">RussiaToday</p>
+					<p class="bitrate">800 kbps</p>
+					<p>English-language news channel which brings the Russian view on global news.</p>
+				</a>
+
+				<a href="#"  onclick="return ChangeChannel('ClubbingTV');">
+					<img src="../images/channellogos/ClubbingTV.png" alt="" />
+					<p class="channelname">ClubbingTV</p>
+					<p class="bitrate">800 kbps</p>
+					<p>A TV channel exclusively dedicated to electronic music, DJs and club culture.</p>
+				</a>
+
+			</div>
+		<!--Start RayV Embedding -->
+		<!-- embed RayV: START -->
+			<div id="RayvControlContainer" style="width:640px;height:480px;"></div>
+<script type="text/javascript">Rayv = false;</script>
+<script type="text/javascript" src="http://static.rayv-inc.com/ViewerEmbed/rayv.js"></script>
+<script type="text/javascript">
+if (!Rayv) {
+	document.getElementById("RayvControlContainer").innerHTML = "rayv.js library is not loaded properly.";
+} else {
+	Rayv.Embed("RayvControlContainer", {
+		"InstallMode":"OnClick",
+		"CoverImageURL":"http://static.rayv-inc.com/ViewerEmbed/images/getRayv.JPG", 
+		"Affiliate":"rayv",
+		"Language":"en",
+		"SessionActive":"1",
+		"ChannelId":"ytnhd1200",
+		"InitParams":"allowDVR=true&allowDetach=1&ChannelID=ytnhd1200&allowguide=false"
+	});
+}
+function ChangeChannel(ChannelID)
+{
+	var rvc = Rayv.GetRayvViewerObject();
+	rvc.ChannelID=ChannelID;
+	return false;
+}
+</script>
+
+
+	</div>
+</div>
+<?php include '../includes/footer.php'; ?>

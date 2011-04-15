@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+
+<script type="text/javascript">
+	var base = document.domain;
+	var port = window.location.port
+	document.write('<base href="http://' + base + ':' + port + '" />');
+</script>
+
+
+
+<!-- CSS : implied media="all" 
+<link rel="stylesheet" href="css/jquery-ui.css">-->
+
+
+<script src="jwplayer/jwplayer.js"></script>
+</head>
+
+
+<div id="wrapper">
+
+
+<div id="lcol">
+	<div id="ecosystem" class="videopage">
+
+		<div id="videotop" class="clearfix">
+			<h1>RayV Ecosystem<sup>&trade;</sup></h1>
+			<div id="videoplayer"></div>
+<script type="text/javascript"> jwplayer("videoplayer").setup({
+flashplayer: "jwplayer/player.swf", file: "/videos/ORI352x198H264.mov", height: 198, width: 352
+});
+</script>
+
+
+<video src="/videos/ORI352x198H264.mov" height="198" id="html5player" poster="/uploads/image.jpg" width="352">
+</video>
+<script type="text/javascript"> 
+	jwplayer("html5player").setup({
+		flashplayer: "/jwplayer/player.swf" 
+	});
+</script>
+		
+		
+		
+		</div>
+
+		
+	</div>
+</div>
+	</div>
+
+</div>
+
+</div>
+
+
+</body>
