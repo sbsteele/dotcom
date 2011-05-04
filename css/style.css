@@ -243,7 +243,7 @@ button {  width: auto; overflow: visible; }
 	text-shadow: 0 1px 1px #2A7ECC;
 }
 body {
-	background: #000;
+	background: #1A1A1A;
 }
 header {
 	background: #1a1a1a;
@@ -585,7 +585,6 @@ h3.bluebg {
 	color: #FFFFFF;
 	font-size: 153%;
 	padding: 6px 10px;
-	text-shadow: 0 0px 0px #2A7ECC;
 	font-weight: bold;
 	text-shadow: 0 2px 0 #2A7ECC;
 }
@@ -643,7 +642,7 @@ h3.bluebg {
 	font-size:167%;
 	font-weight: normal;
 	border-bottom: 1px solid #BEDCF5;
-	margin: 20px 0 12px;
+	margin: 10px 0 12px;
 }
 .bottombox h3 {
 	margin: 0 0 8px 100px;
@@ -721,6 +720,9 @@ h3.bluebg {
 	outline: none;
 	font-size: 18px;
 }
+.whitebutton:hover {
+	background: url('../images/buttonsprites3.png') -104 -52px no-repeat;
+}
 .demoapp .whitebutton {
 	float: none;
 }
@@ -733,6 +735,7 @@ h3.bluebg {
 }
 .whitebutton span:hover {
 	color: #29b8f1;
+	background: url('../images/buttonsprites3.png') right -104px no-repeat;
 }
 .rss-box a {
 	font-size:116%;
@@ -987,7 +990,7 @@ h4 a {
 	margin-left: 25px;
 }
 #homeslide .whitebutton  span {
-    padding-right: 100px;
+    padding-right: 150px;
 }
 .HSnavi {
 	float: left;
@@ -1031,7 +1034,7 @@ h4 a {
 #csscrollnav {
 	text-align:center;
 	border-top: 1px solid #BEDCF5;
-	padding-bottom: 20px;
+	padding-bottom: 30px;
 }
 #csscrollnav .browse {
 	display: block;
