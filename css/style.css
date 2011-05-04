@@ -615,7 +615,7 @@ h3.bluebg {
 	width: 960px;
 	margin: 0 auto;
 	position: relative;
-	background: url('../images/homeslide-bg.png') repeat-x;
+	background: url('../images/hometop-bg.png') repeat-x;
 }
 #HSscrollnav {
 	position: absolute;
@@ -964,6 +964,7 @@ h4 a {
 	width: 948px;
 	height: 416px;
 	margin: 0 auto;
+	background: url('../images/homeslide-bg.png') repeat-x 0 0;
 }
 #homeslide .items div {
 	width: 948px;

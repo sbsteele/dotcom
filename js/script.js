@@ -32,14 +32,13 @@ $(document).ready(function() {
 //	$("#chained").scrollable({circular: true}).autoscroll({ autoplay: false, interval: 8000, autopause: true }).navigator()
 	
 //Homepage Homeslide scroll (main content slider)
-	$("#homeslide").scrollable({circular: true, speed: 800}).autoscroll({ autoplay: true, interval: 4000, autopause: false }).navigator({
-		// ul.HSnavi now functions as our navigator
-		navi:'div.HSnavi'
-	});
+	$("#homeslide").scrollable({circular: true, speed: 1000}).autoscroll({ autoplay: true, interval: 4000, autopause: false }).navigator({ navi:'div.HSnavi' });
+
 	var HSscrollapi = $("#homeslide").data("scrollable");
 	$(".HSnavi").click(function() {
 		HSscrollapi.stop();
 	})
+	HSscrollapi.onBeforeSeek(function(){ $(".HSitem").fadeOut()}).onSeek(function(){ $(".HSitem").fadeIn(400); });
 	
 // Priduct scroll
 	var scrollapi = $("#productscrollable").data("scrollable");
