@@ -51,7 +51,7 @@
 			</tr>
 		</table>
 		<div id="rfooter">
-			<a href="index.html"><img src="images/footer_logo.jpg" alt="RayV.com Home" /></a>
+			<a href="index.html"><img src="images/logo.png" width="82" height="16" alt="RayV.com Home" /></a>
 			<p>
 				copyright &copy;2011 RayV Inc.<br>
 				<!--<a href="legal/toc.html">Terms and Conditions</a><br>

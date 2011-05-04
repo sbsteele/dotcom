@@ -27,7 +27,7 @@
 <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/style.css?v=1">
 
 <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects-->
@@ -38,7 +38,6 @@
 
 <body>
 
-<div id="<? if ($layout=="homepage") { echo $layout; } ?>wrapper">
 <header>
 	<div class="innercol clearfix">
 		<nav id="topnav">

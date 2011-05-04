@@ -29,10 +29,21 @@ $(document).ready(function() {
 		return false;
 	});
 /*Homepage Case Studies Scroll*/	
-	$("#chained").scrollable({circular: true}).autoscroll({ autoplay: true, interval: 8000 }).navigator()
-	$("#productscrollable").scrollable({circular: true, speed: 200}).navigator()
-	scrollapi = $("#productscrollable").data("scrollable");
-	deeplink = window.location.search.substring(1)
+//	$("#chained").scrollable({circular: true}).autoscroll({ autoplay: false, interval: 8000, autopause: true }).navigator()
+	
+//Homepage Homeslide scroll (main content slider)
+	$("#homeslide").scrollable({circular: true, speed: 800}).autoscroll({ autoplay: true, interval: 4000, autopause: false }).navigator({
+		// ul.HSnavi now functions as our navigator
+		navi:'div.HSnavi'
+	});
+	var HSscrollapi = $("#homeslide").data("scrollable");
+	$(".HSnavi").click(function() {
+		HSscrollapi.stop();
+	})
+	
+// Priduct scroll
+	var scrollapi = $("#productscrollable").data("scrollable");
+	var deeplink = window.location.search.substring(1)
 	if (deeplink) {
 		scrollapi.seekTo(deeplink);
 	}

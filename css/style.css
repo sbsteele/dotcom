@@ -212,7 +212,7 @@ button {  width: auto; overflow: visible; }
     Author: Owen Masback
  */
 .bluebg {
-	background-color: #00BFFF;
+	background-color: #29b8f1;
 	word-spacing: .1em;
 }
 #main .bluebg .readmore_white {
@@ -237,20 +237,20 @@ button {  width: auto; overflow: visible; }
 	margin: 0 auto;
 }
 .bluebg h3 {
-	   text-shadow: 0 2px 0px #0084FF;
+	   text-shadow: 0 2px 0px #2A7ECC;
 }
 .bluebg p {
-	text-shadow: 0 1px 1px #0084ff;
+	text-shadow: 0 1px 1px #2A7ECC;
 }
 body {
 	background: #000;
 }
 header {
-	background: #000;
+	background: #1a1a1a;
     letter-spacing: 0.05em;
 }
 .innercol {
-	background-color: #000;
+	background-color: #1a1a1a;
 	width: 960px;
 	margin: 0 auto;
 }
@@ -275,17 +275,16 @@ header {
 	color: #fff;
 	display: block;
 	padding: 9px 11px;
-	border-right: 1px solid #133031;
+	border-right: 1px solid #1e465e;
 	text-decoration:none;
 	opacity: 0.9999;
-	-webkit-transition: background 0.15s linear;
+/*	-webkit-transition: background 0.15s linear;
 	-moz-transition: background 0.15s linear;
 	-o-transition: background 0.15s linear;
-	transition: background 0.15s linear;
+	transition: background 0.15s linear;*/
 }
 .topnavL1 a:hover {
-	color: #000;
-	background-color: #ffffff;
+	background-color: #2b2b2b;
 	
 }
 .topnavL2 {
@@ -300,10 +299,7 @@ header {
 	width: 152px;
 }
 .navhomelink a {
-	background: url("../images/logo-rayv-blackbg.png") no-repeat scroll 9px 9px transparent;
-}
-.navhomelink a:hover {
-	background: url("../images/logo-rayv-whitebg.png") no-repeat scroll 9px 9px #fff;
+	background: url("../images/logo.png") no-repeat scroll 9px 9px transparent;
 }
 #contactsales {
 	float: right;
@@ -382,7 +378,7 @@ p {
 	font-weight: normal;
 	color: #007ebe	;
 	margin: 0 30px 20px 0;
-	line-height: 40px
+	line-height: 40px;
 }
 #main h2 {
 	font-size: 167%;
@@ -589,9 +585,9 @@ h3.bluebg {
 	color: #FFFFFF;
 	font-size: 153%;
 	padding: 6px 10px;
-	text-shadow: 0 0px 0px #0084FF;
+	text-shadow: 0 0px 0px #2A7ECC;
 	font-weight: bold;
-	text-shadow: 0 2px 0 #0084FF;
+	text-shadow: 0 2px 0 #2A7ECC;
 }
 #main .blueheader p {
 	margin: 1.3em 100px 0em 0;
@@ -603,79 +599,32 @@ h3.bluebg {
 	margin: 15px 0;
 }
 #main .readmore_white:hover {
-	background-color:#00bfff;
+	background-color:#29b8f1;
 }
 #solutions .readmore_white {
 	float: right;
 }
 /*Homepage******************************************************************/
-#homepagewrapper {
-}
-#homepagewrapper #main .innercol {
-	background: transparent none;
-    padding: 0;
-	margin: 0;
+#main .innercol.homepage {
+	background: url("../images/home-bg.png") repeat-x scroll 0 0 transparent;
 	width: 100%;
-}
-#main .onecol940 {
-	background-image: none;
-	padding: 0 0 0px;
-}
-#homepagewrapper h1 {
-    background: url("../images/header_homepage.png") no-repeat scroll 0 0 transparent;
-    color: #303030;
-    height: 60px;
-    margin: 0 auto;
-    text-align: center;
-    width: 960px;
-}
-#homepagewrapper h4 {
-	margin: 0 0 20px;
-	color: #3a7898;
-	text-align: center;
-	font-weight: normal;
-	font-size:15px;
-	line-height:32px;
-	background: url('../images/hr_homepage.png') 50% 0 no-repeat;
-	padding-top: 20px;
+	padding: 11px 0 0 0;
 }
 #hometop {
-	padding: 30px 0 0;
-	background-color:#00bFFF;
-}
-#homesolutions {
-	background: url('../images/homeboxes-OG2.jpg') 50% 0 no-repeat;
-	width:960px;
-	height: 394px;
-	text-align: center;
+	height: 427px;
+	width: 960px;
 	margin: 0 auto;
+	position: relative;
+	background: url('../images/homeslide-bg.png') repeat-x;
 }
-.homesolution {
-	width: 320px;
-	float: left	;
-	color: #fff;
-}
-.industry {
-	font-size: 12px;
-	margin-top: 36px;
-}
-.homesolution h3 {
-	margin-top: 232px;
-	font-size: 24px;
-	color: #fff;
-}
-.soldescription {
-	font-size: 15px;
-	line-height: 20px;
-	margin: 10px auto 20px;
-	width: 280px;
+#HSscrollnav {
+	position: absolute;
+	top: 398px;
+	left: 19px;
 }
 .readmore {
 	background: url('../images/arrow_readmore.png') no-repeat right 75%;
 	padding-right: 24px;
-}
-.homesolution .readmore {
-	margin-top: 20px;
 }
 #homebottom {
 	width:960px;
@@ -767,8 +716,8 @@ h3.bluebg {
 	text-decoration: none;
 	color: #007ebe;
 	cursor: pointer;
-	background: url('../images/buttonsprites2.png') 0 -50px no-repeat;
-	height: 50px;
+	background: url('../images/buttonsprites3.png') 0 -52px no-repeat;
+	height: 52px;
 	outline: none;
 	font-size: 18px;
 }
@@ -780,10 +729,10 @@ h3.bluebg {
 	height:100%;
 	line-height:46px;
 	padding-right: 40px;
-	background: url('../images/buttonsprites2.png') right 0px no-repeat;
+	background: url('../images/buttonsprites3.png') right 0px no-repeat;
 }
 .whitebutton span:hover {
-	color: #00BFFF;
+	color: #29b8f1;
 }
 .rss-box a {
 	font-size:116%;
@@ -1007,13 +956,76 @@ h4 a {
 	when scrolling occurs this element stays still.
 */
 .scrollable {
-
 	/* required settings */
 	position:relative;
 	overflow:hidden;
+}
+#homeslide.scrollable {
+	width: 948px;
+	height: 416px;
+	margin: 0 auto;
+}
+#homeslide .items div {
+	width: 948px;
+	height: 416px;
+}
+#homeslide h1 {
+	padding: 40px 0 0 30px;
+	font-family: 'Oswald';
+	color: #fff;
+	text-shadow: 0px 1px 6px #002B7C;  
+}
+#homeslide p {
+	width: 360px;
+	padding-left: 30px;
+	margin: 1em 0;
+	color: #b9e9ff;
+}
+#homeslide .whitebutton {
+	margin-left: 25px;
+}
+#homeslide .whitebutton  span {
+    padding-right: 100px;
+}
+.HSnavi {
+	float: left;
+}
+#main .HSnavi a {
+	z-index: 1;
+	display:block;
+	float: left;
+    position: relative;
+	height:23px;
+	border-style: solid;
+	border-width: 20px 10px 0 10px;
+	border-color: #29b8f1 transparent transparent;
+	margin: 0 -5px;
+	color: #fff;
+	font-size:11px;
+	font-weight:bold;
+	padding: 0 4px;
+	height: 20px;
+	outline: 0; 
+}
+#main .HSnavi a span {
+	position: relative;
+	top: -19px;
+	outline: 0;
+}
+#main .HSnavi a.active, #main .HSnavi a:hover {
+	border-top-color: #008dd2;
+	z-index: 2; 
+}
+#main .HSnavi a.active {
+	
+	z-index: 2;
+}
+
+#casestudies .scrollable {
 	width: 430px;
 	height:100px;
 }
+
 #csscrollnav {
 	text-align:center;
 	border-top: 1px solid #BEDCF5;
@@ -1031,7 +1043,7 @@ h4 a {
 	float: left;
 	width:14px;
 	height:14px;
-	background: #00bfff;
+	background: #29b8f1;
 	margin: 0 1px;
 }
 .navi a.active, .navi a:hover, #csscrollnav .browse:hover {
@@ -1046,7 +1058,7 @@ h4 a {
 	float: left;
 	width:14px;
 	height:14px;
-	background: #00bfff;
+	background: #29b8f1;
 	margin: 0 1px;
 	line-height: 11px;
 }
@@ -1084,11 +1096,11 @@ h4 a {
 	float: right;
 	width:34px;
 	height:34px;
-	background: #00bfff;
+	background: #29b8f1;
 	margin: 0 0 0 3px;
 	font-weight:bold;
 	cursor: pointer;
-	color:#00bfff;
+	color:#29b8f1;
 	font-size:18px;
 	-moz-user-select: none;
 }
@@ -1096,10 +1108,10 @@ h4 a {
 	background-color:#007ebe;
 }
 #prodscrollnav .left {
-	background: #00bfff url('../images/arrow-left-white-large.png') 50% 50% no-repeat;
+	background: #29b8f1 url('../images/arrow-left-white-large.png') 50% 50% no-repeat;
 }
 #prodscrollnav .right {
-	background:#00bfff url('../images/arrow-right-white-large.png') 50% 50% no-repeat;
+	background:#29b8f1 url('../images/arrow-right-white-large.png') 50% 50% no-repeat;
 }
 #prodscrollnav .navi {
 	float: right;
@@ -1109,7 +1121,7 @@ h4 a {
 	float: left;
 	width:34px;
 	height:34px;
-	background: #00bfff;
+	background: #29b8f1;
 	margin: 0 0 0 3px;
 }
 #prodscrollnav .navi a:hover {
@@ -1167,7 +1179,7 @@ h4 a {
 	background: transparent;
 }
 footer {
-	background: #000;
+	background: #1a1a1a;
 	margin-bottom: -16px;
 }
 footer .innercol {
@@ -1351,7 +1363,7 @@ ul.tabs li a {
 	background-color:#F45126;
 }
 #tabtop2 a span {
-	background-color:#00BFFF;
+	background-color:#29b8f1;
 }
 #tabtop3 a span {
 	background-color:#DF0058;
