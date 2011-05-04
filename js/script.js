@@ -29,7 +29,7 @@ $(document).ready(function() {
 		return false;
 	});
 /*Homepage Case Studies Scroll*/	
-//	$("#chained").scrollable({circular: true}).autoscroll({ autoplay: false, interval: 8000, autopause: true }).navigator()
+	$("#chained").scrollable({circular: true}).autoscroll({ autoplay: false, interval: 8000, autopause: true }).navigator({ navi:'div.navi' });
 	
 //Homepage Homeslide scroll (main content slider)
 	$("#homeslide").scrollable({circular: true, speed: 1000}).autoscroll({ autoplay: true, interval: 4000, autopause: false }).navigator({ navi:'div.HSnavi' });
