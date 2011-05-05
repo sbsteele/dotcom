@@ -734,7 +734,7 @@ h3.bluebg {
 	background: url('../images/buttonsprites3.png') right 0px no-repeat;
 }
 .whitebutton span:hover {
-	color: #29b8f1;
+	color: #1395d7;
 	background: url('../images/buttonsprites3.png') right -104px no-repeat;
 }
 .rss-box a {
@@ -954,6 +954,42 @@ h4 a {
 	font-style:italic;
 	color: #999;
 }
+/*Marketplace Forms********************************************/
+#marketplacetop.scrollable {
+	width: 948px;
+	height: 416px;
+	margin: 0 auto;
+	background: url('../images/homeslide-bg.png') repeat-x 0 0;
+}
+#marketplacetop .items div {
+	width: 948px;
+	height: 416px;
+}
+#marketplacetop h1 {
+	padding: 40px 0 0 30px;
+	font-family: 'Oswald';
+	color: #fff;
+	text-shadow: 0px 1px 6px #002B7C;
+	font-size:40px;
+}
+#marketplacetop p {
+	width: 440px;
+	padding-left: 30px;
+	margin: 1em 0;
+	color: #b9e9ff;
+}
+#marketplacetop .whitebutton {
+	margin-left: 25px;
+}
+#marketplacetop .whitebutton  span {
+	width: 190px;
+}
+#homebottom {
+	padding-left: 44px;
+	height: 100px;
+}
+
+
 /*Scrollable***************************************************
 	root element for the scrollable.
 	when scrolling occurs this element stays still.
