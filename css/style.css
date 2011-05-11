@@ -878,7 +878,7 @@ h4 a {
 }
 #channels li.invisible { background-color: #F5F5ED; }
 #channels li img { 1px solid; height: 50px }
-#channels li div { height: 2.6em; padding-top: 10px; line-height: .8em; }
+#channels li div { height: 2.6em; padding-top: 10px; line-height: 1.1em; }
 #channels li div a { }
 
 
