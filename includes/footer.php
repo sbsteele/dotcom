@@ -60,7 +60,6 @@
 		</div>
 	</div>
 </footer>
-</div>
 <!-- Javascript at the bottom for fast page loading -->
 
 <!-- Grab Google CDNs jQuery. fall back to local if necessary -->
