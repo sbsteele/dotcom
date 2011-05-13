@@ -32,7 +32,7 @@ $(document).ready(function() {
 	$("#chained").scrollable({circular: true}).autoscroll({ autoplay: false, interval: 8000, autopause: true }).navigator({ navi:'div.navi' });
 	
 //Homepage Homeslide scroll (main content slider)
-	$("#homeslide").scrollable({circular: true, speed: 800}).autoscroll({ autoplay: true, interval: 4000, autopause: false }).navigator({ navi:'div.HSnavi' });
+	$("#homeslide").scrollable({circular: true, speed: 500, easing: 'easeInOutExpo'}).autoscroll({ autoplay: false, interval: 4000, autopause: false }).navigator({ navi:'div.HSnavi' });
 
 	var HSscrollapi = $("#homeslide").data("scrollable");
 	$(".HSnavi").click(function() {
@@ -53,18 +53,18 @@ $(document).ready(function() {
 //		$("#mpdistributionform").hide();
 //		$("#mpcontentform").show();
 		var mpcontentform = '<iframe height="1398" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://rayvinc.wufoo.com/embed/r7p2s1/"><a href="https://rayvinc.wufoo.com/forms/r7p2s1/" title="Martketplace for Content Owners" rel="nofollow">Fill out my Wufoo form!</a></iframe>';
-		$("#homebottom").animate({
-		    height: ['1398px', 'swing'],
-		}, 400 );
+//		$("#homebottom").animate({
+//		    height: ['1398px', 'swing'],
+//		}, 400 );
 		$("#homebottom").html(mpcontentform);
 	})
 	$("#mpdistributionbtn").click(function() {
 //		$("#mpdistributionform").show();
 //		$("#mpcontentform").hide();
-		$("#homebottom").animate({
+/*		$("#homebottom").animate({
 		    height: ['1389px', 'swing'],
 		}, 400 );
-		var mpdistributionform = '<iframe height="1389" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://rayvinc.wufoo.com/embed/s7p2m7/"><a href="https://rayvinc.wufoo.com/forms/s7p2m7/" title="Martketplace for Distributors" rel="nofollow">Fill out my Wufoo form!</a></iframe>';
+  */  	var mpdistributionform = '<iframe height="1389" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://rayvinc.wufoo.com/embed/s7p2m7/"><a href="https://rayvinc.wufoo.com/forms/s7p2m7/" title="Martketplace for Distributors" rel="nofollow">Fill out my Wufoo form!</a></iframe>';
 		$("#homebottom").html(mpdistributionform);
 	})
 
