@@ -41,7 +41,8 @@ $(document).ready(function() {
 //	HSscrollapi.onBeforeSeek(function(){ $(".HSitem").fadeOut(300)}).onSeek(function(){ $(".HSitem").fadeIn(400); });
 	
 // Product scroll
-	var scrollapi = $("#productscrollable").data("scrollable");
+	$("#productscrollable").scrollable({circular: true, speed: 200}).navigator() 
+   var scrollapi = $("#productscrollable").data("scrollable");
 	var deeplink = window.location.search.substring(1)
 	if (deeplink) {
 		scrollapi.seekTo(deeplink);
@@ -50,17 +51,13 @@ $(document).ready(function() {
 //Marketplace Form show/hide////
 
 	$("#mpcontentbtn").click(function() {
-//		$("#mpdistributionform").hide();
-//		$("#mpcontentform").show();
 		var mpcontentform = '<iframe height="1398" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://rayvinc.wufoo.com/embed/r7p2s1/"><a href="https://rayvinc.wufoo.com/forms/r7p2s1/" title="Martketplace for Content Owners" rel="nofollow">Fill out my Wufoo form!</a></iframe>';
 		$("#homebottom").animate({ height: ['1398px', 'easeInOutExpo'] }, 600 );
 		$("#homebottom").html(mpcontentform);
 	})
 	$("#mpdistributionbtn").click(function() {
-//		$("#mpdistributionform").show();
-//		$("#mpcontentform").hide();
-		$("#homebottom").animate({ height: ['1389px', 'easeInOutExpo'] }, 600 );
     	var mpdistributionform = '<iframe height="1389" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://rayvinc.wufoo.com/embed/s7p2m7/"><a href="https://rayvinc.wufoo.com/forms/s7p2m7/" title="Martketplace for Distributors" rel="nofollow">Fill out my Wufoo form!</a></iframe>';
+		$("#homebottom").animate({ height: ['1389px', 'easeInOutExpo'] }, 600 );
 		$("#homebottom").html(mpdistributionform);
 	})
 
