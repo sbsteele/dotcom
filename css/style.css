@@ -986,7 +986,7 @@ h4 a {
 }
 #homebottom {
 	padding-left: 44px;
-	height: 100px;
+	padding-bottom: 20px;
 }
 
 
@@ -1027,6 +1027,9 @@ h4 a {
 }
 #homeslide .whitebutton  span {
     padding-right: 150px;
+}
+#HSscrollnavinner .browse {
+	display: none;
 }
 .HSnavi {
 	float: left;
