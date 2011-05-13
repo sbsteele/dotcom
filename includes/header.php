@@ -15,7 +15,7 @@
 <script type="text/javascript">
 	var base = document.domain;
 	var port = window.location.port
-	document.write('<base href="http://' + base + ':' + port + '" />');
+	document.write('<base href="http://' + base + (port?':':'') + port + '" />');
 </script>
 <meta name="description" content="RayV Optimized Coud Streaming">
 <meta name="description" content="The Leading TV over IP Platform" /> 
