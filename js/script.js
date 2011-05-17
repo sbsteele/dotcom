@@ -61,6 +61,14 @@ $(document).ready(function() {
 		$("#homebottom").html(mpdistributionform);
 	})
 
+//Nav Dropdowns////////////
+$('ul.sf-menu').superfish({ 
+            delay:       0,                            // one second delay on mouseout 
+           // animation:   {height:'show'},  // fade-in and slide-down animation 
+            speed:       'fast',                          // faster animation speed 
+            autoArrows:  true,                           // disable generation of arrow mark-up 
+            dropShadows: false                            // disable drop shadows 
+        });
 //Sidebar Scroll///////////
 
 	
