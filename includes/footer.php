@@ -46,6 +46,7 @@
 					<ul>
 						<li><a href="documentation/manuals.html">User Manuals</a></li>
 					</ul>
+					<h3 class="multicol"><a href="marketplace/marketplace.html">RayV Marketplace</a></h3>
 					<h3 class="multicol"><a href="experience/experience.html">Experience RayV</a></h3>
 				</td>
 			</tr>

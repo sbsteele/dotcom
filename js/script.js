@@ -28,6 +28,8 @@ $(document).ready(function() {
 		$(activeTab).fadeIn(); //Fade in the active ID content
 		return false;
 	});
+
+
 /*Homepage Case Studies Scroll*/	
 	$("#chained").scrollable({circular: true}).autoscroll({ autoplay: false, interval: 8000, autopause: true }).navigator({ navi:'div.navi' });
 	
@@ -42,8 +44,8 @@ $(document).ready(function() {
 	
 // Product scroll
 	$("#productscrollable").scrollable({circular: true, speed: 200}).navigator() 
-   var scrollapi = $("#productscrollable").data("scrollable");
-	var deeplink = window.location.search.substring(1)
+	scrollapi = $("#productscrollable").data("scrollable");
+	deeplink = window.location.search.substring(1)
 	if (deeplink) {
 		scrollapi.seekTo(deeplink);
 	}
