@@ -27,9 +27,7 @@
 <!-- Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references -->
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
-<link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/style.css?v=1">
 
 <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects-->

@@ -851,7 +851,7 @@ p {
 	float: left;
 	clear: right;
 	margin-right: 1px; 
-	margin-top: 14px;
+	margin-top: 0px;
 	margin-left: -5px;
 	padding-left: 17px;
 	text-decoration: none;
@@ -1131,7 +1131,7 @@ h4 a {
 }
 #marketplacetop h1 {
 	padding: 40px 0 0 30px;
-	font-family: 'Nunito';
+	font-family: Nunito;
 	color: #fff;
 	text-shadow: 0px 1px 6px #002B7C;
 	font-size:40px;
@@ -1174,12 +1174,13 @@ h4 a {
 	height: 416px;
 }
 #homeslide h1 {
-	padding: 40px 0 0 30px;
+	padding: 60px 0 0 30px;
 	color: #fff;
 	text-shadow: 0px 1px 6px #002B7C;
 	font-size:60px;
 	font-weight: bold;
 	margin-bottom:  13px;
+	font-family: Ubuntu;
 }
 #homeslide p {
 	width: 360px;
@@ -1207,7 +1208,7 @@ h4 a {
     position: relative;
 	height:23px;
 	border-style: solid;
-	border-width: 20px 10px 0 10px;
+	border-width: 26px 13px 0;
 	border-color: #29b8f1 transparent transparent;
 	margin: 0 -5px;
 	color: #fff;
@@ -1219,8 +1220,9 @@ h4 a {
 }
 #main .HSnavi a span {
 	position: relative;
-	top: -19px;
+	top: -24px;
 	outline: 0;
+	font-size: 13px;
 }
 #main .HSnavi a.active, #main .HSnavi a:hover {
 	border-top-color: #008dd2;
