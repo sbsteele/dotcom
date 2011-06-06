@@ -28,6 +28,8 @@
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+<link  href="http://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,bold,bolditalic" rel="stylesheet" type="text/css" >
 <link rel="stylesheet" href="css/style.css?v=1">
 
 <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects-->
@@ -46,7 +48,7 @@
 					<a href="index.html">Home</a>
 				</li>
 				<li class="topnavL1">
-					<a href="ecosystem/ecosystem.html">Ecosystem</a>
+					<a href="ecosystem/ecosystem.html">Products</a>
 					<ul>
 						<li><a href="ecosystem/technology.html">RayV Technology</a></li>
 						<li><a href="ecosystem/grid.html">RayV Grid</a></li>
@@ -65,7 +67,15 @@
 					</ul>
 				</li>
 				<li class="topnavL1">
-					<a href="partnersandclients/casestudies.html">Partners &amp; Clients</a>
+					<a>Services</a>
+					<ul>
+						<li><a href="services/expertservices.html">Expert Services</a></li>
+						<li><a href="services/customersupport.html">Customer Support</a></li>
+						<li><a href="services/rayvdirect.html">RayV Direct</a></li>
+					</ul>
+				</li>
+				<li class="topnavL1">
+					<a href="partnersandclients/casestudies.html">Partners</a>
 					<ul>
 						<li><a href="partnersandclients/casestudies.html">Case Studies</a></li>
 						<li><a href="partnersandclients/partners.html">Partners</a></li>

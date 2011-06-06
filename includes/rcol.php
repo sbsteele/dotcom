@@ -41,6 +41,17 @@ $solutionsString = <<<SOLUTIONS
 </div>
 SOLUTIONS;
 
+$servicesString = <<<SERVICES
+<div class="rnav_container">
+<h2><a>Services:</a></h2>
+	<ul class="rnav">
+		<li><a href="services/expertservices.html">Expert Services</a></li>
+		<li><a href="services/customersupport.html">Customer Support</a></li>
+		<li><a href="services/rayvdirect.html">RayV Direct</a></li>
+	</ul>
+</div>
+SERVICES;
+
 $companyString = <<<COMPANY
 <div class="rnav_container">
 <h2>Company:</h2>
