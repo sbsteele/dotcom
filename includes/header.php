@@ -28,6 +28,7 @@
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/style.css?v=1">
 
 <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects-->
@@ -60,7 +61,7 @@
 					<a href="solutions/solutions.html">Solutions</a>
 					<ul>
 						<li><a href="solutions/deliverysolution.html">RayV Core</a></li>
-						<li><a href="solutions/rayvturnkey.html">RayV Turnkey</a></li>
+						<li><a href="solutions/rayvturnkey.html">Cloud TV</a></li>
 						<li><a href="solutions/uplinkoverip.html">Uplink over IP</a></li>
 					</ul>
 				</li>

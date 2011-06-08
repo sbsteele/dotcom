@@ -129,6 +129,9 @@ if ($section == "partners") {
 if ($section == "dashboard") {
 	echo $dashboardString;
 }
+if ($section == "services") {
+	echo $servicesString;
+}
 ?>
 	<div id="contactbox">
 		<div class="bottomborder">
