@@ -19,8 +19,8 @@
 				<td>
 					<h3><a href="solutions/solutions.html">Solutions</a></h3>
 					<ul>
-						<li><a href="solutions/deliverysolution.html">Telco-grade Delivery Solution</a></li>
-						<li><a href="solutions/rayvTurnkey.html">RayV Turnkey</a></li>
+						<li><a href="solutions/rayvcore.html">Telco-grade Delivery Solution</a></li>
+						<li><a href="solutions/cloudtv.html">RayV CloudTV</a></li>
 						<li><a href="solutions/uplinkoverip.html">Uplink over IP</a></li>
 					</ul>
 				</td>

@@ -533,7 +533,7 @@ p {
 	font-weight: normal;
 	color: #007ebe	;
 	margin: 0 30px 35px 0;
-	line-height: 64px;
+	line-height: 40px;
 }
 #main h2 {
 	font-size: 167%;
@@ -714,7 +714,6 @@ p {
 	height: 198px;
 	border: 1px solid #BEDCF5;
 	float: right;
-	
 }
 #videotop {
 	padding: 0 20px 20px 0;
@@ -738,6 +737,8 @@ p {
 	padding: 6px 34px 6px 10px;
 	color: #fff;
 	margin: 15px 0;
+	diplay: block;
+	float: left;
 }
 #main .readmore_white:hover {
 	background-color:#29b8f1;
@@ -1182,6 +1183,7 @@ h4 a {
 	font-weight: bold;
 	margin-bottom:  13px;
 	font-family: Ubuntu;
+	line-height: 64px;
 }
 #homeslide p {
 	width: 400px;

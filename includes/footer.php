@@ -19,8 +19,9 @@
 				<td>
 					<h3><a href="solutions/solutions.html">Solutions</a></h3>
 					<ul>
-						<li><a href="solutions/deliverysolution.html">RayV Core</a></li>
-						<li><a href="solutions/rayvturnkey.html">RayV Turnkey</a></li>
+						<li><a href="solutions/cloudtv.html">RayV CloudTV</a></li>
+						<li><a href="solutions/rayvlive.html">RayV Live</a></li>
+						<li><a href="solutions/rayvcore.html">RayV Core</a></li>
 						<li><a href="solutions/uplinkoverip.html">Uplink over IP</a></li>
 					</ul>
 				</td>

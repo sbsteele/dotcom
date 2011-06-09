@@ -34,8 +34,9 @@ $solutionsString = <<<SOLUTIONS
 <div class="rnav_container">
 <h2><a href="solutions/solutions.html">Solutions:</a></h2>
 	<ul class="rnav">
-		<li><a href="solutions/deliverysolution.html">RayV Core</a></li>
-		<li><a href="solutions/rayvturnkey.html">RayV Turnkey</a></li>
+		<li><a href="solutions/cloudtv.html">RayV CloudTV</a></li>
+		<li><a href="solutions/rayvlive.html">RayV Live</a></li>
+		<li><a href="solutions/rayvcore.html">RayV Core</a></li>
 		<li><a href="solutions/uplinkoverip.html">Uplink over IP</a></li>
 	</ul>
 </div>
@@ -95,14 +96,17 @@ $dashboardString = <<<DASHBOARD
 DASHBOARD;
 
 $broadcastermanualstring = <<<BROADCASTERMANUALS
+<a class="readmore_white" href="documentation/onesheets/RayV-Encoder.pdf">Download Factsheet</a>
 <a class="readmore_white" href="documentation/manuals.html#broadcaster">Encoder Manual</a>
 BROADCASTERMANUALS;
 
 $playermanualstring = <<<PLAYERMANUALS
+<a class="readmore_white" href="documentation/onesheets/RayV-Player.pdf">Download Factsheet</a>
 <a class="readmore_white" href="documentation/manuals.html#player">Player Manual</a>
 PLAYERMANUALS;
 
 $dashboardmanualstring = <<<DASHBOARDMANUALS
+<a class="readmore_white" href="documentation/onesheets/RayV-Dashboard.pdf">Download Factsheet</a>
 <a class="readmore_white" href="documentation/manuals.html#dashboard">Dashboard Manual</a>
 DASHBOARDMANUALS;
 
@@ -110,13 +114,21 @@ $monitormanualstring = <<<MONITORMANUALS
 <a class="readmore_white" href="documentation/manuals.html#monitor">Monitoring Manuals</a>
 MONITORMANUALS;
 
+$cloudtvstring = <<<CLOUDTVSIDE
+<a class="readmore_white" href="partnersandclients/casestudies.html">Read Case Studies</a>
+<a class="readmore_white" href="documentation/onesheets/RayV-CloudTV.pdf">Download Factsheet</a>
+CLOUDTVSIDE;
+
+$rayvlivestring = <<<RAYVLIVESIDE
+<a class="readmore_white" href="documentation/onesheets/RayV-Live.pdf">Download Factsheet</a>
+RAYVLIVESIDE;
+
 if ($section == "technology") {
 	echo $technologyString;
 }
 if ($section == "ecosystem") {
 	echo $ecosystemString;
 }
-
 if ($section == "solutions") {
 	echo $solutionsString;
 }
@@ -157,8 +169,11 @@ if ($pagetitle == "RayV Dashboard") {
 if ($pagetitle == "RayV Monitor") {
 	echo $monitormanualstring;
 }
-if ($pagetitle == "RayV Turnkey") {
-	echo '<a class="readmore_white" href="partnersandclients/casestudies.html">Read Case Studies</a>';
+if ($pagetitle == "RayV CloudTV") {
+	echo $cloudtvstring;
+}
+if ($pagetitle == "RayV Live") {
+	echo $rayvlivestring;
 }
 ?>
 </div>
