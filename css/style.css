@@ -739,6 +739,7 @@ p {
 	margin: 15px 0;
 	diplay: block;
 	float: left;
+	display:  blocl;
 }
 #main .readmore_white:hover {
 	background-color:#29b8f1;
@@ -894,6 +895,7 @@ p {
 .doclink {
 	padding-left: 20px;
 	background: url('../images/icon_download.gif') 0 3px no-repeat;
+	height: 3em;
 }
 .doclink a {
 	font-size: 123.1%;
@@ -1132,7 +1134,7 @@ h4 a {
 }
 #marketplacetop h1 {
 	padding: 20px 0 0 30px;
-	font-family: Ubuntu, "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", arial, sans-serif;
+	font-family: ,'Myriad Pro','Lucida Grande',Helvetica,sans-serif;
 	font-weight: bold;
 	color: #fff;
 	text-shadow: 0px 1px 6px #002B7C;
@@ -1183,7 +1185,7 @@ h4 a {
 	font-size:60px;
 	font-weight: bold;
 	margin-bottom:  13px;
-	font-family: Ubuntu, "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", arial, sans-serif;
+	font-family: 'Myriad Pro';
 	font-weight: bold;
 	line-height: 64px;
 }
