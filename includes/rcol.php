@@ -96,17 +96,17 @@ $dashboardString = <<<DASHBOARD
 DASHBOARD;
 
 $broadcastermanualstring = <<<BROADCASTERMANUALS
-<a class="readmore_white" href="documentation/onesheets/RayV-Encoder.pdf">Download Factsheet</a>
+<a class="readmore_white" href="documentation/onesheets/RayV-Encoder.pdf">Download fact sheet</a>
 <a class="readmore_white" href="documentation/manuals.html#broadcaster">Encoder Manual</a>
 BROADCASTERMANUALS;
 
 $playermanualstring = <<<PLAYERMANUALS
-<a class="readmore_white" href="documentation/onesheets/RayV-Player.pdf">Download Factsheet</a>
+<a class="readmore_white" href="documentation/onesheets/RayV-Player.pdf">Download fact sheet</a>
 <a class="readmore_white" href="documentation/manuals.html#player">Player Manual</a>
 PLAYERMANUALS;
 
 $dashboardmanualstring = <<<DASHBOARDMANUALS
-<a class="readmore_white" href="documentation/onesheets/RayV-Dashboard.pdf">Download Factsheet</a>
+<a class="readmore_white" href="documentation/onesheets/RayV-Dashboard.pdf">Download fact sheet</a>
 <a class="readmore_white" href="documentation/manuals.html#dashboard">Dashboard Manual</a>
 DASHBOARDMANUALS;
 
@@ -116,11 +116,11 @@ MONITORMANUALS;
 
 $cloudtvstring = <<<CLOUDTVSIDE
 <a class="readmore_white" href="partnersandclients/casestudies.html">Read Case Studies</a>
-<a class="readmore_white" href="documentation/onesheets/RayV-CloudTV.pdf">Download Factsheet</a>
+<a class="readmore_white" href="documentation/onesheets/RayV-CloudTV.pdf">Download fact sheet</a>
 CLOUDTVSIDE;
 
 $rayvlivestring = <<<RAYVLIVESIDE
-<a class="readmore_white" href="documentation/onesheets/RayV-Live.pdf">Download Factsheet</a>
+<a class="readmore_white" href="documentation/onesheets/RayV-Live.pdf">Download fact sheet</a>
 RAYVLIVESIDE;
 
 if ($section == "technology") {

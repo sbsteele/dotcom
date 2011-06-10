@@ -1157,8 +1157,28 @@ h4 a {
 	padding-left: 44px;
 	padding-bottom: 20px;
 }
-
-
+/*CloudTV*****************************************************/
+#cloudtable td, #cloudtable th {
+	text-align: center;
+}
+#cloudtable td.firstcol {
+	text-align: left;
+}
+#cloudtable td {
+	height: 2em;
+}
+#cloudtable td.tdmeat {
+	font-size: 26px;
+	line-height: 48px;
+	color: #007ebe;
+}
+#lcol #cloudtable th h3 {
+	margin: .3em 0 0;
+}
+#cloudtable  span.atrequest {
+	font-size: 14px;
+	line-height: 37px;
+}
 /*Scrollable***************************************************
 	root element for the scrollable.
 	when scrolling occurs this element stays still.
@@ -1242,7 +1262,7 @@ h4 a {
 }
 
 #casestudies .scrollable {
-	width: 430px;
+	width:430px;
 	height:100px;
 }
 
