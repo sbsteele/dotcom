@@ -1134,7 +1134,7 @@ h4 a {
 }
 #marketplacetop h1 {
 	padding: 20px 0 0 30px;
-	font-family: ,'Myriad Pro','Lucida Grande',Helvetica,sans-serif;
+	font-family: arial, sans-serif;
 	font-weight: bold;
 	color: #fff;
 	text-shadow: 0px 1px 6px #002B7C;
@@ -1205,7 +1205,7 @@ h4 a {
 	font-size:60px;
 	font-weight: bold;
 	margin-bottom:  13px;
-	font-family: 'Myriad Pro';
+	font-family: arial, sans-serif;
 	font-weight: bold;
 	line-height: 64px;
 }
