@@ -61,9 +61,9 @@
 					<a href="solutions/solutions.html">Solutions</a>
 					<ul>
 						<li><a href="solutions/cloudtv.html">RayV CloudTV</a></li>
-						<li><a href="solutions/rayvlive.html">RayV Live</a></li>
 						<li><a href="solutions/rayvcore.html">RayV Core</a></li>
-						<li><a href="solutions/uplinkoverip.html">Uplink over IP</a></li>
+						<li><a href="solutions/rayvlive.html">RayV Live</a></li>
+						<li><a href="solutions/uplinkoverip.html">RayV Uplink over IP</a></li>
 					</ul>
 				</li>
 				<li class="topnavL1">
