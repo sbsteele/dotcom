@@ -28,13 +28,11 @@
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:bold' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/style.css?v=1">
 
 <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects-->
 <script src="js/modernizr-1.6.min.js"></script>
 <script src="js/iThing.js"></script>
-<script src="videoplayer/jwplayer.js"></script>
 </head>
 
 <body>
