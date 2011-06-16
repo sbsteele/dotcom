@@ -1252,14 +1252,33 @@ h4 a {
 	outline: 0;
 	font-size: 13px;
 }
-#main .HSnavi a.active, #main .HSnavi a:hover {
-	border-top-color: #008dd2;
-	z-index: 2; 
-}
 #main .HSnavi a.active {
-	
+	border-top-color: #008dd2 !important;
+	z-index: 10; 
+}
+#main .HSnavi a:hover {
+	border-top-color: #00a0ee;
+}
+#main .HSnavi a.hstab1 {
+	z-index: 3;
+}
+#main .HSnavi a.hstab2 {
 	z-index: 2;
 }
+#main .HSnavi a.hstab3 {
+	z-index: 1;
+}
+#main .HSnavi a.hstab1.active {
+	z-index: 10;
+}
+#main .HSnavi a.hstab2.active {
+	z-index: 10;
+}
+#main .HSnavi a.hstab3.active {
+	z-index: 10;
+}
+
+
 
 #casestudies .scrollable {
 	width:430px;
