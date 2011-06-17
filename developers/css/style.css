@@ -216,7 +216,7 @@ body {
 	background: #1A1A1A;
 }
 header {
-	background: #1a1a1a;
+	background: #D0E0ED;
     letter-spacing: 0.05em;
 	position: relative;
 	z-index: 2;
@@ -226,7 +226,7 @@ header {
     letter-spacing: 0.04em;
 }
 .innercol {
-	background-color: #1a1a1a;
+	background-color: #D0E0ED;
 	width: 960px;
 	margin: 0 auto;
 }
@@ -240,12 +240,12 @@ header {
 }
 #topnav ul {
 	float: left;
-	border-left: 1px solid #1E465E;
+	border-left: 1px solid #B3CCDC;
 	margin-left: 0px;
 }
 #topnav ul ul {
 	float: left;
-	border-left: 1px solid #133031;
+	border-left: 1px solid #D0E0ED;
 	margin-left: 0;
 }
 .topnavL1 {
@@ -257,7 +257,7 @@ header {
 	color: #00669C;
 	display: block;
 	padding: 9px 11px;
-	border-right: 1px solid #1e465e;
+	border-right: 1px solid #B3CCDC;
 	text-decoration:none;
 	opacity: 0.9999;
 /*	-webkit-transition: background 0.15s linear;
@@ -266,7 +266,7 @@ header {
 	transition: background 0.15s linear;*/
 }
 .topnavL1 a:hover {
-	background-color: #2b2b2b;
+	background-color: #E1EAF2;
 	
 }
 .navhomelink {
@@ -375,15 +375,15 @@ ul.sf-menu li li li.sfHover ul {
 /*   background:		#BDD2FF;*/
 }
 .sf-menu li li {
-	background:		#000;
-	border-top: 1px solid #2b2b2b;
+	background:		#D0E0ED;
+	border-top: 1px solid #B3CCDC;
 }
 .sf-menu li li li {
-	background:		#000;
+	background:		#D0E0ED;
 }
 .sf-menu li:hover, .sf-menu li.sfHover,
 .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
-	background-color:		#2b2b2b;
+	background-color:		#E1EAF2;
 	outline:		0;
 }
 
@@ -1469,7 +1469,6 @@ footer h3 a{
 	font-weight: normal;
 }
 footer h3 a:hover {
-	color: #fff;
 }
 footer li {
 	list-style-type: none;
@@ -1480,7 +1479,6 @@ footer li a {
 	font-size: 89%;
 }
 footer li a:hover {
-	color: #46B4E0;
 }
 .multicol {
 	border-top: 1px solid #B3CCDC;
