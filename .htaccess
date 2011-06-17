@@ -1,2 +1,4 @@
 RemoveHandler .html .htm
 AddType application/x-httpd-php .php .htm .html
+
+Options -Indexes
