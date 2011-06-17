@@ -2,3 +2,6 @@ RemoveHandler .html .htm
 AddType application/x-httpd-php .php .htm .html
 
 Options -Indexes
+
+
+Redirect 301 /cms/experience/experience.html http://www.rayv.com/experience/experience.html
