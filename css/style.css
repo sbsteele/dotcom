@@ -254,7 +254,7 @@ header {
 }
 .topnavL1 a {
 /*	font-size: 123%; */
-	color: #00669C;
+	color: #fff;
 	display: block;
 	padding: 9px 11px;
 	border-right: 1px solid #1e465e;
@@ -270,31 +270,31 @@ header {
 	
 }
 .navhomelink {
-	width: 327px;
+	width: 151px;
 }
 .navhomelink a {
 	background: url("../images/logo.png") no-repeat scroll 9px 9px transparent;
 }
 #contactsales {
 	float: right;
-	color: #008DD9;
+	color: #46B4E0;
 	font-size: 93%;
 	opacity: .999;
 	padding: 13px 0 0 10px;
 }
 #contactsales span {
 	display: inline-block;
-	padding: 0 0 0 29px;
+	padding: 0 0 0 28px;
 }
 #contactsales span.email {
 /*	background: url('../images/icon_email.gif') 0 3px no-repeat;*/
 	padding-left: 0px;
 }
 .phone {
-	background: url("../images/icon_phone.gif") no-repeat scroll 5px 2px transparent;
+	background: url("../images/icon_phone.gif") no-repeat scroll 4px 2px transparent;
 }
 #contactsales a {
-	color: #008DD9;
+	color: #46B4E0;
 	text-decoration: none;
 	
 }
@@ -525,12 +525,13 @@ p {
 }
 /*lcol***********************************************************/
 #lcol {
+	float: right;
 	width: 750px;
 }
 #main h1 {
 	font-size: 260%;
 	font-weight: normal;
-	color: #303030;
+	color: #007ebe	;
 	margin: 0 30px 35px 0;
 	line-height: 40px;
 }
@@ -1437,7 +1438,7 @@ h4 a {
 	background: transparent;
 }
 footer {
-	background: none repeat scroll 0 0 #D0E0ED;
+	background: #1a1a1a;
 	margin-bottom: -16px;
 }
 footer .innercol {
@@ -1447,7 +1448,7 @@ footer table {
 	float: left;
 }
 footer td {
-	border-right: 1px solid #B3CCDC;
+	border-right: 1px solid #003a4d;
 	padding: 25px 0 30px;
 }
 footer a, footer p {
@@ -1464,7 +1465,7 @@ footer h3 {
 	padding: 0 15px 8px;
 }
 footer h3 a{
-	color: #4186AB;
+	color: #fff;
 	font-size: 107%;
 	font-weight: normal;
 }
@@ -1476,14 +1477,14 @@ footer li {
 	padding: 0 15px 1px;
 }
 footer li a {
-	color: #538BA9;
+	color: #46B4E0;
 	font-size: 89%;
 }
 footer li a:hover {
 	color: #46B4E0;
 }
 .multicol {
-	border-top: 1px solid #B3CCDC;
+	border-top: 1px solid #0a2122;
 	padding-top: 11px;
 	margin-top: 5px;
 }
@@ -1498,7 +1499,7 @@ footer li a:hover {
 	padding-bottom: 6px;
 }
 #rfooter p, #rfooter a {
-	color: #819BA7;
+	color: #49575d;
 	opacity: 1;
 	font-weight: bold;
 }
