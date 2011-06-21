@@ -50,13 +50,7 @@
 					<a href="android.html">Android SDK</a>
 				</li>
 				<li class="topnavL1">
-					<a>Set-top Box SDKs</a>
-					<ul>
-						<li><a href="stb-sigma/sigma.html">Sigma</a></li>
-						<li><a href="stb-amino/amino.html">Amino</a></li>
-						<li><a href="stb-motorola/motorola.html">Motorola</a></li>
-						<li><a href="stb-cisco/cisco.html">Cisco (SA)</a></li>
-					</ul>
+					<a href="stbgeneric.html">Set-top Box SDK</a>
 				</li>
 			</ul>
 			<div id="contactsales">
