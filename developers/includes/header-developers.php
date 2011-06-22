@@ -56,16 +56,16 @@ if (strpbrk($httpusername, '1234') != false) {
 	echo "<a>Set-top Box SDKs</a><ul>";
 }
 if (strpbrk($httpusername, '1') != false) { 
-	echo "<li><a href=\"stb-sigma/sigma.html\">Sigma</a></li>";
+	echo "<li><a href=\"stb-15cfaw468s1/sigma.html\">Sigma</a></li>";
 }
 if (strpbrk($httpusername, '2') != false) {
-	echo "<li><a href=\"stb-amino/amino.html\">Amino</a></li>";
+	echo "<li><a href=\"stb-22d7k1fd5h1/amino.html\">Amino</a></li>";
 }
 if (strpbrk($httpusername, '3') != false) {
-	echo "<li><a href=\"stb-motorola/motorola.html\">Motorola</a></li>";
+	echo "<li><a href=\"stb-34h5d2r58j1/motorola.html\">Motorola</a></li>";
 }
 if (strpbrk($httpusername, '4') != false) {
-	echo "<li><a href=\"stb-cisco/cisco.html\">Cisco (SA)</a></li>";
+	echo "<li><a href=\"stb-44f8h4e6d84/cisco.html\">Cisco (SA)</a></li>";
 }
 if (strpbrk($httpusername, '1234') != false) {
 echo "</ul></li>";
