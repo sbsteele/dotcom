@@ -49,9 +49,28 @@
 				<li class="topnavL1">
 					<a href="android.html">Android SDK</a>
 				</li>
-				<li class="topnavL1">
-					<a href="stbgeneric.html">Set-top Box SDK</a>
-				</li>
+<?php
+$httpusername = $_SERVER['PHP_AUTH_USER'];
+if (strpbrk($httpusername, '1234') != false) {
+	echo "<li class=\"topnavL1\">";
+	echo "<a>Set-top Box SDKs</a><ul>";
+}
+if (strpbrk($httpusername, '1') != false) { 
+	echo "<li><a href=\"stb-sigma/sigma.html\">Sigma</a></li>";
+}
+if (strpbrk($httpusername, '2') != false) {
+	echo "<li><a href=\"stb-amino/amino.html\">Amino</a></li>";
+}
+if (strpbrk($httpusername, '3') != false) {
+	echo "<li><a href=\"stb-motorola/motorola.html\">Motorola</a></li>";
+}
+if (strpbrk($httpusername, '4') != false) {
+	echo "<li><a href=\"stb-cisco/cisco.html\">Cisco (SA)</a></li>";
+}
+if (strpbrk($httpusername, '1234') != false) {
+echo "</ul></li>";
+}
+?>
 			</ul>
 			<div id="contactsales">
 				<span class="email"><a href="company/contactus.html">Contact Us</a></span><span class="phone">1 (323) 860-0735</span>
