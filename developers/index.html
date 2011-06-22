@@ -13,6 +13,26 @@
 			<h2>Mobile Devices</h2>
 			<p class="firstp"><a href="ios.html">Apple iOS</a></p>
 			<p class="firstp"><a href="android.html">Android</a></p>
+			<?php
+			if (strpbrk($httpusername, '1234') != false) {
+				echo "<h2>Set-top Box SDKs</h2>";
+			}
+			if (strpbrk($httpusername, '1') != false) { 
+				echo "<p class=\"firstp\"><a href=\"stb-15cfaw468s1/sigma.html\">Sigma</a></p>";
+			}
+			if (strpbrk($httpusername, '2') != false) {
+				echo "<p class=\"firstp\"><a href=\"stb-22d7k1fd5h1/amino.html\">Amino</a></p>";
+			}
+			if (strpbrk($httpusername, '3') != false) {
+				echo "<p class=\"firstp\"><a href=\"stb-34h5d2r58j1/motorola.html\">Motorola</a></p>";
+			}
+			if (strpbrk($httpusername, '4') != false) {
+				echo "<p class=\"firstp\"><a href=\"stb-44f8h4e6d84/cisco.html\">Cisco (SA)</a></p>";
+			}
+			if (strpbrk($httpusername, '1234') != false) {
+			echo "";
+			}
+			?>
 		</div>
 	</div>
 </div>
