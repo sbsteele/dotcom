@@ -80,4 +80,22 @@ function scrollseek(index) {
 	scrollapi.seekTo(index);
 }
 
+$(function() {
+
+	// if the function argument is given to overlay,
+	// it is assumed to be the onBeforeLoad event listener
+	$(".wufoopop[rel]").overlay({
+
+
+		onBeforeLoad: function() {
+
+			// grab wrapper element inside content
+			var wrap = this.getOverlay().find(".contentWrap");
+
+			// load the page specified in the trigger
+			wrap.load(this.getTrigger().attr("href"));
+		}
+
+	});
+});
 
