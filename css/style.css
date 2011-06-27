@@ -1268,9 +1268,9 @@ h4 a {
 	
 	/* must be initially hidden */
 	display:none;
-	position: absolute !important;
+
 	left: 50%;
-	top: 21px !important;
+
 	
 	/* place overlay on top of other elements */
 	z-index:10000;
