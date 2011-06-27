@@ -494,6 +494,7 @@ h3.bluebg {
 #main .innercol {
 	padding: 30px 0 40px;
 	background: #fff url('../images/border-rcol.gif') repeat-y 760px 0;
+	min-height: 600px;
 }
 #main .onecol {
 	background-image: none;
