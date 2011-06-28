@@ -81,7 +81,7 @@
 					</ul>
 				</li>
 				<li class="topnavL1">
-					<a href="marketplace/marketplace.html">Marketplace</a>
+					<a href="marketplace">Marketplace</a>
 				</li>
 				<li class="topnavL1">
 					<a href="experience/experience.html">Experience RayV</a>

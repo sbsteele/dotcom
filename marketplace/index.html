@@ -57,8 +57,6 @@
 			</div>
 			<div id="tab2" class="tab_content clearfix">
 				<div class="mptableft">
-					<p class="firstp">Our growing list of distributors are in need of content like yours. Whether they are 2nd tier cable operators looking to serve a niche ex-pat communities in their service areas or global connected device manufacturers looking to gobble up market share, they have access to global audiences who want access on their devices of choice.</p>
-				
 
 					<!-- root element for scrollable -->
 					<div id="makeMeScrollable">   
@@ -71,7 +69,7 @@
 $imglist = array();
 if ($handle = opendir('../images/channellogos')) {
 	while (false !== ($file = readdir($handle))) {
-		if ($file != "." && $file != "..") {
+		if ($file != "." && $file != ".." && $file != "_notes") {
 			$imglist[] = $file;
 
           }
@@ -87,16 +85,14 @@ foreach ($imglist as $key => $value) {
 
 	echo "  <img src='/images/channellogos/".$value."'>\n";
 }
-
 ?>
 							</div>
-      
+
 						</div>
-   
-					</div>	
-				
-				
-				
+
+					</div>
+
+					<p class="firstp">Our growing list of distributors are in need of content like yours. Whether they are 2nd tier cable operators looking to serve a niche ex-pat communities in their service areas or global connected device manufacturers looking to gobble up market share, they have access to global audiences who want access on their devices of choice.</p>
 				</div>
 				<div class="mptabright">
 					<div class="whitebutton greenbutton">
