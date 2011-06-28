@@ -71,6 +71,12 @@ $("#makeMeScrollable").smoothDivScroll({
 	autoScrollDirection: "endlessloopright",
 	autoScrollStep: 1,
 	autoScrollInterval: 10
+});
+$("#makeMeScrollable2").smoothDivScroll({
+	autoScroll: "onstart",
+	autoScrollDirection: "endlessloopleft",
+	autoScrollStep: 1,
+	autoScrollInterval: 10
 }); 
 $("#makeMeScrollable").smoothDivScroll("recalculateScrollableArea");
 //Nav Dropdowns////////////

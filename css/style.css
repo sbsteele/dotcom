@@ -1234,11 +1234,15 @@ h4 a {
 	border-right: 1px solid #bedcf5;
 }
 .mptableft {
-	float: left;
-	width: 600px;
+/*	float: left;
+	width: 600px;*/
+}
+.mptabright {
+	float: right;
 }
 .mpdist {
 	border-top: 1px solid #bedcf5;
+	padding: 15px 0;
 }
 .mpdistlogo {
 	background: no-repeat right 50%;
@@ -1249,17 +1253,33 @@ h4 a {
 }
 .mpdist p {
 	float: left;
-	width: 380px;
+	width: 410px;
+	text-align:justify;
+	margin: 0 !important;
 }
 .mptabs .tab_content {
 	position: relative;
 }
+.mpdeviceicons {
+	float: left;
+	margin: 0 15px;
+}
+.mpdeviceicons img {
+	diplay: block;
+	float: left;
+	margin-right: 15px;
+}
 .tab_content .greenbutton {
 	width: 280px;
-	margin-left: 16px;
-	position: absolute;
-	bottom: 29px;
-	right: 10px;
+	float: right;
+	margin-right: -9px;
+}
+.mptabright .readmore {
+	display: block;
+	margin: 1em 0;
+	font-size:15px;
+	background-position: right 50%;
+	float: right;
 }
 .mptabs .tab_content h3 {
 	border: none;
@@ -1373,14 +1393,15 @@ font: bold 10px Verdana;
 margin: 0 50px 0 0;
 }
 
-#makeMeScrollable
+#makeMeScrollable, #makeMeScrollable2
 {
 	width:100%;
 	height: 52px;
 	position: relative;
+	margin: 1em 0;
 }
 
-#makeMeScrollable div.scrollableArea img
+#makeMeScrollable div.scrollableArea img, #makeMeScrollable2 div.scrollableArea img
 {
 	position: relative;
 	float: left;

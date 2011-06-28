@@ -33,19 +33,30 @@
 		<div class="tab_container">
 			<div id="tab1" class="tab_content clearfix">
 				<div class="mptableft">
-					<p class="firstp">Starting September 2011, RayV plans to launch a new distributor to the Marketplace every month and our small monthly fee includes each and every one of them. You can choose to work with one, some or all of our partners and you have full control over geo-blocking, streaming devices and pricing. With our growing portfolio of distributors, you will instantly have a global audience for your content.</p>
+					<p class="firstp" style="width: ">Starting September 2011, RayV plans to launch a new distributor to the Marketplace every month and our small monthly fee includes each and every one of them. You can choose to work with one, some or all of our partners and you have full control over geo-blocking, streaming devices and pricing. With our growing portfolio of distributors, you will instantly have a global audience for your content.</p>
 					<h2>Featured Distribution Partners</h2>
 					<div class="mpdist clearfix">
 						<div class="mpdistlogo" style="background-image: url('../images/mplogo-lg.png')"></div>
 						<p>The LG Smart TV is one of the world's most advanced internet connected TVs in the industry.  Expected to sell over 10 million units over the next year, LG makes it easy to access a full array of premium online content and LG Apps including RayV's live channels, with its simple Home Dashboard and Magic Motion Remote Control.</p>
+						<div class="mpdeviceicons">
+							<img src="/images/icon-tv.gif" alt="" />
+						</div>
 					</div>
 					<div class="mpdist clearfix">
 						<div class="mpdistlogo" style="background-image: url('../images/mplogo-amt.png')"></div>
 						<p>Advanced Media Technologies, Inc. (AMT) is a value added reseller of the world's most recognized broadband infrastructure manufacturers. AMT through their BITREAPER solution is offering RayV's CloudTV and Marketplace participants access to Cable TV and Telco IPTV operators throughout North and South America.</p>
+						<div class="mpdeviceicons">
+							<img src="/images/icon-tv.gif" alt="" />
+							<img src="/images/icon-iphone.gif" alt="" />
+							<img src="/images/icon-laptop.gif" alt="" />
+						</div>
 					</div>
-					<div class="mpdist clearfix">
+					<div class="mpdist clearfix" style="border-bottom: 1px solid #bedcf5;">
 						<div class="mpdistlogo" style="background-image: url('../images/mplogo-conduit.png')"></div>
 						<p>Conduit is the fastest-growing network of Web and mobile app publishers, with over 230 million end-users.Conduit enables publishers to seamlessly encapsulate the RayV Marketplace channels and deploy it everywhere, from Web browsers and Community Toolbars to mobile devices across all platforms. </p>
+						<div class="mpdeviceicons">
+							<img src="/images/icon-laptop.gif" alt="" />
+						</div>
 					</div>
 				</div>
 				<div class="mptabright">
@@ -53,11 +64,13 @@
 						<a href="/marketplace/join-the-rayv-marketplace.html" class="wufoopop" rel="#overlay">
 							<span>Get started now</span></a>
 					</div>
+					<div style="clear:both;"></div>
+					<a href="/marketplace/distributor-inquiry.html" class="readmore">Are you a distributor looking for content? Inquire here</a>
 				</div>
 			</div>
 			<div id="tab2" class="tab_content clearfix">
 				<div class="mptableft">
-
+					<h2 style="margin-top: 10px">Featured Channels</h2>
 					<!-- root element for scrollable -->
 					<div id="makeMeScrollable">   
 					   <!-- root element for the items -->
@@ -65,24 +78,21 @@
 					      <!-- 1-5 -->
 							<div class="scrollableArea">
 <?php
-
 $imglist = array();
 if ($handle = opendir('../images/channellogos')) {
 	while (false !== ($file = readdir($handle))) {
 		if ($file != "." && $file != ".." && $file != "_notes") {
 			$imglist[] = $file;
-
-          }
-       }
-  closedir($handle);
-  }
+		}
+	}
+	closedir($handle);
+}
 shuffle($imglist);
 
 foreach ($imglist as $key => $value) {
-    if (is_int($key/7) && $key!=0) {
+	if (is_int($key/7) && $key!=0) {
 //	    echo "</div>\n<div>\n";
 	}
-
 	echo "  <img src='/images/channellogos/".$value."'>\n";
 }
 ?>
@@ -91,6 +101,37 @@ foreach ($imglist as $key => $value) {
 						</div>
 
 					</div>
+					<!-- root element for scrollable -->
+					<div id="makeMeScrollable2">   
+					   <!-- root element for the items -->
+						<div class="scrollWrapper">
+					      <!-- 1-5 -->
+							<div class="scrollableArea">
+<?php
+$imglist = array();
+if ($handle = opendir('../images/channellogos')) {
+	while (false !== ($file = readdir($handle))) {
+		if ($file != "." && $file != ".." && $file != "_notes") {
+			$imglist[] = $file;
+		}
+	}
+	closedir($handle);
+}
+shuffle($imglist);
+
+foreach ($imglist as $key => $value) {
+	if (is_int($key/7) && $key!=0) {
+//	    echo "</div>\n<div>\n";
+	}
+	echo "  <img src='/images/channellogos/".$value."'>\n";
+}
+?>
+							</div>
+
+						</div>
+
+					</div>
+
 
 					<p class="firstp">Our growing list of distributors are in need of content like yours. Whether they are 2nd tier cable operators looking to serve a niche ex-pat communities in their service areas or global connected device manufacturers looking to gobble up market share, they have access to global audiences who want access on their devices of choice.</p>
 				</div>
