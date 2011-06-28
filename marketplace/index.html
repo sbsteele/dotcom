@@ -1,7 +1,8 @@
+
 <? 
 	$pagetitle = "RayV";
 	$sections = 'nosection';
-	$layout = '';
+	$layout = 'marketplace';
 ?>
 
 <?php include '../includes/header.php'; ?>
@@ -17,7 +18,7 @@
 			<li>Secure and encrypted streaming</li>
 		</ul>
 		<div class="whitebutton">
-			<a href="https://rayvinc.wufoo.com/forms/join-the-rayv-martketplace/" class="wufoopop" rel="#overlay">
+			<a href="/marketplace/join-the-rayv-marketplace.html" class="wufoopop" rel="#overlay">
 				<span>Join the RayV Marketplace</span>
 			</a>
 		</div>
@@ -49,7 +50,7 @@
 				</div>
 				<div class="mptabright">
 					<div class="whitebutton greenbutton">
-						<a href="https://rayvinc.wufoo.com/forms/join-the-rayv-martketplace/" class="wufoopop" rel="#overlay">
+						<a href="/marketplace/join-the-rayv-marketplace.html" class="wufoopop" rel="#overlay">
 							<span>Get started now</span></a>
 					</div>
 				</div>
@@ -57,10 +58,49 @@
 			<div id="tab2" class="tab_content clearfix">
 				<div class="mptableft">
 					<p class="firstp">Our growing list of distributors are in need of content like yours. Whether they are 2nd tier cable operators looking to serve a niche ex-pat communities in their service areas or global connected device manufacturers looking to gobble up market share, they have access to global audiences who want access on their devices of choice.</p>
+				
+
+					<!-- root element for scrollable -->
+					<div id="makeMeScrollable">   
+					   <!-- root element for the items -->
+						<div class="scrollWrapper">
+					      <!-- 1-5 -->
+							<div class="scrollableArea">
+<?php
+
+$imglist = array();
+if ($handle = opendir('../images/channellogos')) {
+	while (false !== ($file = readdir($handle))) {
+		if ($file != "." && $file != "..") {
+			$imglist[] = $file;
+
+          }
+       }
+  closedir($handle);
+  }
+shuffle($imglist);
+
+foreach ($imglist as $key => $value) {
+    if (is_int($key/7) && $key!=0) {
+//	    echo "</div>\n<div>\n";
+	}
+
+	echo "  <img src='/images/channellogos/".$value."'>\n";
+}
+
+?>
+							</div>
+      
+						</div>
+   
+					</div>	
+				
+				
+				
 				</div>
 				<div class="mptabright">
 					<div class="whitebutton greenbutton">
-						<a href="https://rayvinc.wufoo.com/forms/join-the-rayv-martketplace/" class="wufoopop" rel="#overlay">
+						<a href="/marketplace/join-the-rayv-marketplace.html" class="wufoopop" rel="#overlay">
 							<span>Get started now</span></a>
 					</div>
 				</div>
@@ -95,7 +135,7 @@
 				</div>
 				<div class="mptabright">
 					<div class="whitebutton greenbutton">
-						<a href="https://rayvinc.wufoo.com/forms/join-the-rayv-martketplace/" class="wufoopop" rel="#overlay">
+						<a href="/marketplace/join-the-rayv-marketplace.html" class="wufoopop" rel="#overlay">
 							<span>Get started now</span>
 						</a>
 					</div>
@@ -108,7 +148,7 @@
 				</div>
 				<div class="mptabright">
 					<div class="whitebutton greenbutton">
-						<a href="https://rayvinc.wufoo.com/forms/join-the-rayv-martketplace/" class="wufoopop" rel="#overlay">
+						<a href="/marketplace/join-the-rayv-marketplace.html" class="wufoopop" rel="#overlay">
 							<span>Get started now</span>
 						</a>
 					</div>
@@ -116,9 +156,6 @@
 			</div>
 		</div>
 	</div>
-</div>
-<div class="simple_overlay" id="overlay">
-	<iframe height="600" allowTransparency="true" frameborder="0" SCROLLING="AUTO" style="width:100%;border:none"  src="https://rayvinc.wufoo.com/embed/w7w8w7/"><a href="https://rayvinc.wufoo.com/forms/w7w8w7/" title="Join the RayV Martketplace" rel="nofollow">Fill out my Wufoo form!</a></iframe>
 </div>
 
 </div>

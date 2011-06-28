@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Basic demo - jQuery Smooth Div Scroll</title>
+	
+	<!-- the CSS for Smooth Div Scroll -->
+	<link rel="Stylesheet" type="text/css" href="css/smoothDivScroll.css" />
+	
+	<!-- jQuery library - I get it from Google API's -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+	<script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
+	<script src="/js/jquery.easing.1.3.js"></script>
+
+
+<script src="/js/plugins.js"></script>
+<script src="/js/script.js"></script>
+
+	<script type="text/javascript">
+
+	</script>
+
+	<!-- Styles for my specific scrolling content -->
+	<style type="text/css">
+		#makeMeScrollable
+		{
+			width:100%;
+			height: 52px;
+			position: relative;
+		}
+		
+		#makeMeScrollable div.scrollableArea img
+		{
+			position: relative;
+			float: left;
+			margin: 0;
+			padding: 0;
+		}
+		div.scrollingHotSpotLeft {
+		    background-image: url("../images/big_transparent.gif");
+		    background-position: center center;
+		    background-repeat: repeat;
+		    cursor: url("../images/cursors/cursor_arrow_left.png"), url("images/cursors/cursor_arrow_left.cur"), w-resize;
+		    height: 100%;
+		    left: 0;
+		    min-width: 75px;
+		    position: absolute;
+		    width: 10%;
+		    z-index: 200;
+		}
+		div.scrollingHotSpotLeftVisible {
+		    background-color: #FFFFFF;
+		    background-image: url("../images/arrow_left.gif");
+		    background-repeat: no-repeat;
+		    opacity: 0.35;
+		}
+		div.scrollingHotSpotRight {
+		    background-image: url("../images/big_transparent.gif");
+		    background-position: center center;
+		    background-repeat: repeat;
+		    cursor: url("../images/cursors/cursor_arrow_right.png"), url("images/cursors/cursor_arrow_right.cur"), e-resize;
+		    height: 100%;
+		    min-width: 75px;
+		    position: absolute;
+		    right: 0;
+		    width: 10%;
+		    z-index: 200;
+		}
+		div.scrollingHotSpotRightVisible {
+		    background-color: #FFFFFF;
+		    background-image: url("../images/arrow_right.gif");
+		    background-repeat: no-repeat;
+		    opacity: 0.35;
+		}
+		div.scrollWrapper {
+		    height: 100%;
+		    overflow: hidden;
+		    position: relative;
+		    width: 100%;
+		}
+		div.scrollableArea {
+		    height: 100%;
+		    position: relative;
+		    width: auto;
+		}
+		
+	</style>
+	
+</head>
+
+<body>
+
+	<div id="makeMeScrollable">
+		<div class="scrollingHotSpotLeft"></div>
+		<div class="scrollingHotSpotRight"></div>
+		<div class="scrollWrapper">
+			<div class="scrollableArea">
+				<img src='/images/channellogos/75x50-Edusat.png'>
+				  <img src='/images/channellogos/tvs.jpg'>
+				  <img src='/images/channellogos/75x50-TVP1.png'>
+				  <img src='/images/channellogos/action_cropped.png'>
+
+				  <img src='/images/channellogos/73x50-LateleNovela.png'>
+				  <img src='/images/channellogos/73x50-Men7.png'>
+				  <img src='/images/channellogos/Cinefirst_cropped.png'>
+				  <img src='/images/channellogos/JHM_cropped.png'>
+				  <img src='/images/channellogos/73x50-SonLifeBroadcastNetwork.png'>
+				  <img src='/images/channellogos/75x50-Sport1.png'>
+				  <img src='/images/channellogos/Toonmax.jpg'>
+				  <img src='/images/channellogos/encypedia_cropped.png'>
+				  <img src='/images/channellogos/tv5monde.jpg'>
+
+				  <img src='/images/channellogos/virv.png'>
+				  <img src='/images/channellogos/logo-tbn.png'>
+				  <img src='/images/channellogos/RTL9.png'>
+				  <img src='/images/channellogos/visionplus_crepped.png'>
+				  <img src='/images/channellogos/73x50-CineMexicano.png'>
+				  <img src='/images/channellogos/virv_cropped.png'>
+				  <img src='/images/channellogos/73x50-FreckleTV.png'>
+				  <img src='/images/channellogos/france3.jpg'>
+				  <img src='/images/channellogos/ab1.jpg'>
+
+				  <img src='/images/channellogos/france4.jpg'>
+				  <img src='/images/channellogos/73x50-OutdoorSportChannel.png'>
+				  <img src='/images/channellogos/75x50-InfoTV.png'>
+				  <img src='/images/channellogos/73x50-GodTV.png'>
+				  <img src='/images/channellogos/73x50-Filmsonreel.png'>
+				  <img src='/images/channellogos/73x50-Sorpresa.png'>
+				  <img src='/images/channellogos/75x50-TVPInfo.png'>
+				  <img src='/images/channellogos/SLT.png'>
+				  <img src='/images/channellogos/LWTV.png'>
+
+				  <img src='/images/channellogos/TouteLHistore_cropped.png'>
+				  <img src='/images/channellogos/75x50-YTN.png'>
+				  <img src='/images/channellogos/73x50-LaFamiliaCosmovision.png'>
+				  <img src='/images/channellogos/75x50-Balticum.png'>
+				  <img src='/images/channellogos/75x50-LTV2.png'>
+				  <img src='/images/channellogos/Arte.jpg'>
+				  <img src='/images/channellogos/75x50-LaughFactory.png'>
+				  <img src='/images/channellogos/DragonTV.jpg'>
+				  <img src='/images/channellogos/noLogo.jpg'>
+
+				  <img src='/images/channellogos/HongKongLivelogo.png'>
+				  <img src='/images/channellogos/VideoClick.png'>
+				  <img src='/images/channellogos/NT1 remix_cropped.png'>
+				  <img src='/images/channellogos/Enlace2.png'>
+				  <img src='/images/channellogos/Breibart_cropped.png'>
+				  <img src='/images/channellogos/ClubbingTV.png'>
+				  <img src='/images/channellogos/LNK.png'>
+				  <img src='/images/channellogos/europe2.jpg'>
+				  <img src='/images/channellogos/73x50-UplifTV.png'>
+
+				  <img src='/images/channellogos/75x50-TV1.png'>
+				  <img src='/images/channellogos/SmileofaChild2.png'>
+				  <img src='/images/channellogos/Documentary-Channel.jpg'>
+				  <img src='/images/channellogos/rytastv.png'>
+				  <img src='/images/channellogos/SMG.jpg'>
+				  <img src='/images/channellogos/Trinlogo.png'>
+				  <img src='/images/channellogos/JCTV2.png'>
+				  <img src='/images/channellogos/ab3.jpg'>
+				  <img src='/images/channellogos/Escales_cropped.png'>
+
+				  <img src='/images/channellogos/Directv.png'>
+				  <img src='/images/channellogos/France24.jpg'>
+				  <img src='/images/channellogos/victorytulsa_cropped.png'>
+				  <img src='/images/channellogos/75x50-TVP2.png'>
+				  <img src='/images/channellogos/73x50-3ABN.png'>
+				  <img src='/images/channellogos/75x50-TVPHistoria.png'>
+				  <img src='/images/channellogos/73x50-TBN.png'>
+				  <img src='/images/channellogos/mangas.jpg'>
+				  <img src='/images/channellogos/73x50-Wildworldextreme.png'>
+
+				  <img src='/images/channellogos/iWorshipHere.png'>
+				  <img src='/images/channellogos/TIN.png'>
+				  <img src='/images/channellogos/LWTV_cropped.png'>
+				  <img src='/images/channellogos/TVP2.png'>
+				  <img src='/images/channellogos/73x50-FUNimationChannel.png'>
+				  <img src='/images/channellogos/75x50-GranCine.png'>
+				  <img src='/images/channellogos/Albania_news24.png'>
+				  <img src='/images/channellogos/RTL_cropped.png'>
+				  <img src='/images/channellogos/75x50-KBSWorld.png'>
+
+				  <img src='/images/channellogos/.DS_Store'>
+				  <img src='/images/channellogos/NT_cropped.png'>
+				  <img src='/images/channellogos/Albania_KTV_cropped.png'>
+				  <img src='/images/channellogos/73x50-TVChile.png'>
+				  <img src='/images/channellogos/Liuks.png'>
+				  <img src='/images/channellogos/ChurchChannel2.png'>
+				  <img src='/images/channellogos/ftv_cropped.png'>
+				  <img src='/images/channellogos/75x50-LNK.png'>
+				  <img src='/images/channellogos/73x50-GoldenEagleBroadcasting.png'>
+
+				  <img src='/images/channellogos/73x50-Wheelstv.png'>
+				  <img src='/images/channellogos/Breitbart.png'>
+				  <img src='/images/channellogos/73x50-WorldHarvestTV.png'>
+				  <img src='/images/channellogos/BFMTV.jpg'>
+				  <img src='/images/channellogos/cinepolar.jpg'>
+				  <img src='/images/channellogos/action.png'>
+				  <img src='/images/channellogos/TVPInfo.png'>
+				  <img src='/images/channellogos/75x50-Polonia.png'>
+				  <img src='/images/channellogos/rfo.jpg'>
+
+				  <img src='/images/channellogos/Haravaaapin_cropped.png'>
+				  <img src='/images/channellogos/ChasseEtPeche_cropped.png'>
+				  <img src='/images/channellogos/HolySpiritToday.png'>
+				  <img src='/images/channellogos/75x50-Liuks.png'>
+				  <img src='/images/channellogos/75x50-OutdoorChannel.png'>
+				  <img src='/images/channellogos/73x50-Halogen.png'>
+				  <img src='/images/channellogos/Albania_bbf_cropped.png'>
+				  <img src='/images/channellogos/75x50-CGNTV.png'>
+				  <img src='/images/channellogos/RussiaToday.png'>
+
+				  <img src='/images/channellogos/ignited-church-logo74x50.jpg'>
+				  <img src='/images/channellogos/TVPSport.png'>
+				  <img src='/images/channellogos/TinTelenovelas.png'>
+				  <img src='/images/channellogos/Albania_news24cropped.png'>
+				  <img src='/images/channellogos/TVSH_cropped.png'>
+				  <img src='/images/channellogos/LCP.jpg'>
+				  <img src='/images/channellogos/TIN_cropped.png'>
+				  <img src='/images/channellogos/AC.png'>
+				  <img src='/images/channellogos/Albania_KTV.png'>
+
+				  <img src='/images/channellogos/Euronews.jpg'>
+				  <img src='/images/channellogos/ABMoteurs_cropped.png'>
+				  <img src='/images/channellogos/animaux_cropped.png'>
+				  <img src='/images/channellogos/TF1.jpg'>
+				  <img src='/images/channellogos/Tislam.png'>
+				  <img src='/images/channellogos/MIM.png'>
+				  <img src='/images/channellogos/CineFX_cropped.png'>
+				  <img src='/images/channellogos/trin-holland-logo74x50-2.jpg'>
+				  <img src='/images/channellogos/_notes'>
+
+				  <img src='/images/channellogos/ABTMC_cropped.png'>
+				  <img src='/images/channellogos/75x50-LTV1.png'>
+				  <img src='/images/channellogos/direct8.jpg'>
+				  <img src='/images/channellogos/alsat_cropped.png'>
+				  <img src='/images/channellogos/73x50-CableNoticias.png'>
+				  <img src='/images/channellogos/TVSBoxing.png'>
+				  <img src='/images/channellogos/Albania_RTK_cropped.png'>
+				  <img src='/images/channellogos/france5.jpg'>
+				  <img src='/images/channellogos/tvart.png'>
+
+				  <img src='/images/channellogos/HIMchurch_cropped.png'>
+				  <img src='/images/channellogos/DanPatrick.png'>
+				  <img src='/images/channellogos/ABGroupe.png'>
+				  <img src='/images/channellogos/cinepop_cropped.png'>
+				  <img src='/images/channellogos/75x50-Viasat.png'>
+				  <img src='/images/channellogos/73x50-Parables.png'>
+				  <img src='/images/channellogos/KHM_crppped.png'>
+				  <img src='/images/channellogos/Himlogo.png'>
+				  <img src='/images/channellogos/75x50-Kultura.png'>
+
+				  <img src='/images/channellogos/Activision.png'>
+				  <img src='/images/channellogos/73x50-Momentum.png'>
+				  <img src='/images/channellogos/TVPKultura.png'>
+				  <img src='/images/channellogos/TV1.png'>
+				  <img src='/images/channellogos/TV6.png'>
+				  <img src='/images/channellogos/Woficc_cropped.png'>
+				  <img src='/images/channellogos/france2.jpg'>
+				  <img src='/images/channellogos/VAVLive.png'>
+				  <img src='/images/channellogos/75x50-TVPSport.png'>
+
+				  <img src='/images/channellogos/craze.png'>
+				  <img src='/images/channellogos/75x50-BYUTV.png'>
+				  <img src='/images/channellogos/sportel.jpg'>
+				  <img src='/images/channellogos/nrj12.jpg'>
+				  <img src='/images/channellogos/TVP1.png'>
+				  <img src='/images/channellogos/YTN.png'>
+				  <img src='/images/channellogos/Young-TV.jpg'>
+				  <img src='/images/channellogos/73x50-ChurchChannel.png'>
+				  <img src='/images/channellogos/75x50-TV6.png'>
+
+				  <img src='/images/channellogos/75x50-TV3.png'>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

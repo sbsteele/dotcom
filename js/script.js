@@ -63,6 +63,16 @@ $(document).ready(function() {
 		$("#homebottom").html(mpdistributionform);
 	})
 
+//Channel Scrollable 
+
+//$(".channelscrollable").scrollable({circular: true, speed: 4000, easing: 'linear'}).autoscroll({ autoplay: true, interval: 4100, autopause: false });
+$("#makeMeScrollable").smoothDivScroll({
+	autoScroll: "onstart",
+	autoScrollDirection: "endlessloopright",
+	autoScrollStep: 1,
+	autoScrollInterval: 10
+}); 
+$("#makeMeScrollable").smoothDivScroll("recalculateScrollableArea");
 //Nav Dropdowns////////////
 $('ul.sf-menu').superfish({ 
             delay:       0,                            // one second delay on mouseout 
@@ -73,15 +83,15 @@ $('ul.sf-menu').superfish({
         });
 //Sidebar Scroll///////////
 
-	
+//end documentready function	
 });
 
 function scrollseek(index) {
 	scrollapi.seekTo(index);
 }
 
-$(function() {
-
+/*$(function() {
+ 
 	// if the function argument is given to overlay,
 	// it is assumed to be the onBeforeLoad event listener
 	$(".wufoopop[rel]").overlay({
@@ -98,4 +108,4 @@ $(function() {
 
 	});
 });
-
+*/

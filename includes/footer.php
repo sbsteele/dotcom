@@ -65,8 +65,8 @@
 <!-- Javascript at the bottom for fast page loading -->
 
 <!-- Grab Google CDNs jQuery. fall back to local if necessary -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.6.1.min.js">\x3C/script>')</script>
 <script src="http://cdn.jquerytools.org/1.2.5/full/jquery.tools.min.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 
