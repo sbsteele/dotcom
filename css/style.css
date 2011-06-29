@@ -1245,10 +1245,10 @@ h4 a {
 	padding: 15px 0;
 }
 .mpdistlogo {
-	background: no-repeat right 50%;
+	background: no-repeat right 40%;
 	float: left;
 	width: 200px;
-	height: 120px;
+	height: 108px;
 	margin-right: 20px;
 }
 .mpdist p {
@@ -1265,7 +1265,7 @@ h4 a {
 	margin: 0 15px;
 }
 .mpdeviceicons img {
-	diplay: block;
+	display: block;
 	float: left;
 	margin-right: 15px;
 }

@@ -1,3 +1,89 @@
 .embed{
 	overflow:auto !important
 }
+.distributors span {
+	height: 100px;
+	border-bottom: 1px solid #bedcf5;
+	margin: 3px 0;
+	width: 225px;
+	overflow: hidden;
+	float: none;
+}
+.distributors .checkbox {
+	margin-left: 3px;
+}
+.distributors img {
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+.distributors label.choice {
+	color: #fff;
+}
+.distributors input {
+	position: relative;
+	top: 38%;
+}
+.distlogo {
+	float: left;
+	height: 100px;
+	width: 200px;
+	background-repeat:no-repeat;
+	background-position:0 50%;
+}
+.logo948 {
+	background-image:url('http://www.rayv.com/images/mplogo-lg.png');
+	background-position: 0 55%;
+}
+.logo949 {
+	background-image:url('http://www.rayv.com/images/mplogo-amt.png');
+	background-position: 0 35%;
+}
+.logo950 {
+	background-image:url('http://www.rayv.com/images/mplogo-conduit.png');
+	background-position: 0 35%;
+}
+.pgStyle1 .selected var {
+    border: none;
+}
+.pgStyle1 .selected var, .pgStyle2 var, .pgStyle2 var em {
+    background: none repeat scroll 0 0 #007EBE;
+    color: #FFFFFF;
+}
+.pgStyle1 var {
+    background: none repeat scroll 0 0 transparent;
+    border: 1px solid #bedcf5;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: none;
+    color: #000000;
+    display: block;
+    float: left;
+    font-size: 160%;
+    font-style: normal;
+    height: 40px;
+    line-height: 41px;
+    text-align: center;
+    width: 40px;
+}
+.pgStyle1 b {
+    color: #303030;
+    font-size: 100%;
+}
+.wufoo .info, .wufoo .paging-context {
+    border-bottom: 1px dotted #BEDCF5;
+}
+.wufoo label.desc, .wufoo legend.desc {
+    color: #444444;
+    font-family: Arial;
+    font-size: 100%;
+}
+.pgStyle1 .done var {
+    background: none repeat scroll 0 0 #BEDCF5;
+}
+.wufoo .info h2 {
+    color: #007ebe;
+    font-family: Arial;
+    font-size: 200%;
+    font-style: normal;
+    font-weight: normal;
+}
