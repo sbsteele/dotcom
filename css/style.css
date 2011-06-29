@@ -1253,7 +1253,7 @@ h4 a {
 }
 .mpdist p {
 	float: left;
-	width: 410px;
+	width: 405px;
 	text-align:justify;
 	margin: 0 !important;
 }
@@ -1262,7 +1262,7 @@ h4 a {
 }
 .mpdeviceicons {
 	float: left;
-	margin: 0 15px;
+	margin: 0 20px;
 }
 .mpdeviceicons img {
 	display: block;
