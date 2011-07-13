@@ -87,3 +87,6 @@
     font-style: normal;
     font-weight: normal;
 }
+.wufoo li.focused.distributors {
+background-color: #fff;
+}

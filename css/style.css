@@ -1281,20 +1281,31 @@ h4 a {
 	background-position: right 50%;
 	float: right;
 }
+.mptabright .email_white {
+	background: url('../images/icon-mail-white.png') no-repeat right 75%;
+	padding-right: 24px;
+	display: block;
+	margin: 1em 0;
+	font-size:15px;
+	background-position: right 50%;
+	float: right;
+}
 .mptabs .tab_content h3 {
 	border: none;
 	color: #007ebe;
 	padding: 0;
 	margin-bottom: -10px;
+	padding: 3px 8px;
+}
+.tab_content.mphwtab h3 {
+	background-color: #bedcf5;
 }
 .simple_overlay {
 	
 	/* must be initially hidden */
 	display:none;
-
 	left: 50%;
 
-	
 	/* place overlay on top of other elements */
 	z-index:10000;
 	

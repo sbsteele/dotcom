@@ -89,6 +89,12 @@ $('ul.sf-menu').superfish({
         });
 //Sidebar Scroll///////////
 
+/*$('.mphwtab h3').click(function(){
+	$(this).next().slideToggle();
+})*/
+
+
+
 //end documentready function	
 });
 
