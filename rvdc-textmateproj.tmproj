@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>js/script.js</string>
+	<string>company/contactus.html</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -71,6 +71,8 @@
 			<string>js</string>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>company</string>
 			<key>regexFolderFilter</key>
@@ -181,6 +183,20 @@
 	<integer>200</integer>
 	<key>metaData</key>
 	<dict>
+		<key>company/contactus.html</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>8</integer>
+				<key>line</key>
+				<integer>27</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
 		<key>css/handheld.css</key>
 		<dict>
 			<key>caret</key>
@@ -573,6 +589,7 @@
 		<string>includes/header.php</string>
 		<string>js/plugins.js</string>
 		<string>js/script.js</string>
+		<string>company/contactus.html</string>
 		<string>developers/stbgeneric.html</string>
 		<string>marketplace/index.html</string>
 		<string>solutions/solutions.html</string>
